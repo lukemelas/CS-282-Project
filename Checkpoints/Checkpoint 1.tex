@@ -1,0 +1,61 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage{fullpage} % Package to use full page
+\usepackage{parskip} % Package to tweak paragraph skipping
+\usepackage{tikz} % Package for drawing
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{natbib}
+
+\renewcommand\refname{}
+\usepackage[nottoc, notlof, notlot]{tocbibind}
+
+\title{Project Checkpoint 1}
+\author{Luke Melas-Kyriazi and George Han}
+\date{CS 282, Fall 2018}
+
+\begin{document}
+
+\maketitle
+
+\section*{Problem Definition, Goals, and Evaluation Metrics}
+
+In this project, we aim to develop Bayesian graph convolutional neural networks to perform predictions on graph data and quantify the uncertainty of our predictions. The study of neural networks on graphs, introduced in \citet{gnn09}, is inspired by the successes of convolutional neural networks on grid-based data, such as images, and motivated by the desire to apply similar network architectures to data with intrinsic graph structures. In recent years, graph convolutional neural networks (GCNs) have emerged as a powerful model for performing regressions on both small-scale \citep{gcn_nips15} and large-scale \citep{graphsage_nips17} graphs. These models have been shown to be particularly successful on semi-supervised learning problems \citep{gcniclr17}, where only a small subset (typically less than 1\%) of nodes are labeled, and we would like to infer the labels of all nodes in the graph. This year has seen an explosion of research in such problems, with graph neural networks being applied to action recognition, weather forecasting, traffic prediction, few-shot classification, and a host of other areas. 
+
+As frequentist models, GCNs do not currently quantify the uncertainties of their predictions. Our project aims to generate uncertainties alongside predictions by performing posterior inference over the network weights, as we have been doing for feed-forward neural networks in class. We are aware that implementing Bayesian inference for standard (non-graph) convolutional networks is an active area of research, so we anticipate that doing so for graph convolutional networks will be among the primary challenges of our project. 
+
+We hope to compare our Bayesian GCN to recent work in learning gaussian processes over graphs \citep{ng2018bayesian}. These gaussian processes are an attractive approach for small-scale problems, but as we discussed in class, they have difficulty scaling to large problems, in this case graphs with many nodes and edges. They also differ from our vision of a Bayesian GCN in that these models place a gaussian process over the graph structure, whereas we would learn a distribution over weights. Nonetheless, we hope a Bayesian GCN would deliver sensible uncertainty estimates while scaling to large problems. One additional research area we are tentatively interested in exploring is the intersection of graphs and few-shot learning, as seen in \citet{few_shot_gcn_iclr18}. Bayesian models are a natural fit for few-shot learning problems, in which we have to classify objects from only a few labeled training examples, as these predictions will often be quite uncertain. We do not yet have concrete ideas in this area, but we will conduct more research and provide an update in the next checkpoint. 
+
+We have two goals for the next checkpoint. First, we aim to implement a (non-Bayesian) GCN \citep{gcn_nips15, gcniclr17} and possibly an extension of it, such as the gated graph convolutional network (GGCN) in \citet{ggnn_iclr16}. Implementing this network will solidify our understanding of graph convolutions and prepare us for research in Bayesian GCNs. Second, we hope to begin implementing the graph gaussian process from \citet{ng2018bayesian} and reproducing their results on the Cora dataset. Once implemented, we believe the results of this model should serve as a strong baseline for our research.
+
+We plan to evaluate the performance of a Bayesian GCN using the standard benchmark tasks in the graph neural network literature. These tasks include citation network datasets (Cora, Citeseer, Pubmed), where we aim to classify scientific papers from bag-of-word feature vectors, and possibly a dataset of protein-protein interactions. Previous work has established strong baselines for these tasks, but we are unaware of any work that has published uncertainty estimates. As a result, we will also test on a toy graph dataset to verify that our network produces sensible uncertainties. 
+
+%% ** I will submit this if you think it's ok, then we can focus on figuring out what task to do next. ** 
+
+%% Actually I wonder what uncertainty means in a classification task. in some ways the softmax is supposed to provide the posterior distribution. Uncertainty is an uncertainty in the posterior distribution; marginalize over it?
+
+%% Yep, looks great! 
+
+%% Great! 
+
+
+\section*{Related Work}
+
+A full list of papers related to graph neural networks is available here:
+
+\url{https://github.com/naganandy/graph-based-deep-learning-literature}
+
+A list of possible papers submitted to ICLR 2019 involving GCNs is here: 
+
+\url{https://github.com/naganandy/graph-based-deep-learning-literature/tree/master/miscellaneous}
+
+A number of papers we believe are most relevant to our project are listed in the bibliography below.  
+
+\nocite{*}
+\bibliographystyle{apalike}
+\bibliography{Checkpoints/bib1.bib}
+
+\newpage
+\end{document}
