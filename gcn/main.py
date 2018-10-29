@@ -23,6 +23,7 @@ parser.add_argument('--h_size', type=int, default=16, help='# hidden units')
 parser.add_argument('--dropout', type=float, default=0.5, help='dropout prob')
 parser.add_argument('--val_every', type=int, default=-1, help='val after X epochs')
 parser.add_argument('--val_only', type=int, default=0, help='evaluate only') 
+parser.add_argument('--checkpoint', type=str, default=None, help='save model to path')
 parser.add_argument('--model', type=str, default=None, help='load saved model')
 parser.add_argument('--log_every', type=int, default=50, help='print after X epochs') 
 parser.add_argument('--prepro', type=str, default='../data/cora/preprocessed.pth') 
@@ -53,7 +54,7 @@ model = GCN(num_layers=args.layers,
             out_size=labels.max().item() + 1,
             dropout=args.dropout)
 if args.model:
-    model.load_state_dict(torch.load(torch.model))
+    model.load_state_dict(torch.load(args.model))
 
 # Optimizer
 optimizer = optim.Adam(model.parameters(), lr=args.lr, weight_decay=args.wd)

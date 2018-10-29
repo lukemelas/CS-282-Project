@@ -20,11 +20,16 @@ def train(model, optimizer, adj, feats, labels, idx_train, idx_val, args):
         if ((args.val_every > 0 and epoch % args.val_every == 0) or 
             (args.val_every < 0 and epoch == args.epochs - 1)):
 
-            val_loss, val_acc = validate(model, adj, feats, labels, idx_val, args, epoch)
+            val_loss, val_acc = validate(model, adj, feats, labels, idx_val)
             print('Val acc: \t{:.4f}\t| \tValid loss: {:.4f}'.format(
                    val_acc, val_loss))
             if val_acc > best_acc:
                best_acc, best_loss = val_acc, val_loss
+               if args.checkpoint:
+                   torch.save(model.state_dict(), os.path.join(
+                       args.checkpoint, 'model-val-{:.4f}.pth'.format(val_acc)))
+                   torch.save(args, os.path.join(args.checkpoint, 'args.pth'))
+                   print('* Saved new best model')
 
     return best_loss, best_acc
 
@@ -47,7 +52,7 @@ def train_epoch(model, optimizer, adj, feats, labels, idx_train, args, epoch):
     time_elapsed = time.time() - start
     return loss, acc, time_elapsed
     
-def validate(model, adj, feats, labels, idx_val, args, epoch):
+def validate(model, adj, feats, labels, idx_val):
     '''Validate on entire validation set (no minibatching)'''
     model.eval()
     output = model(feats, adj)
