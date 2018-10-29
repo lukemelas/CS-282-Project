@@ -26,6 +26,7 @@ parser.add_argument('--val_only', type=int, default=0, help='evaluate only')
 parser.add_argument('--model', type=str, default=None, help='load saved model')
 parser.add_argument('--log_every', type=int, default=50, help='print after X epochs') 
 parser.add_argument('--prepro', type=str, default='../data/cora/preprocessed.pth') 
+parser.add_argument('--test', type=int, default=0, help='use test data')
 
 # Setup
 start = time.time()
@@ -40,10 +41,10 @@ if args.seed is not None:
 # Data
 if args.prepro:
     tmp = torch.load(args.prepro)
-    adj_i, adj_v, adj_s, feats, labels, idx_train, idx_val = tmp
+    adj_i, adj_v, adj_s, feats, labels, idx_train, idx_val, idx_test = tmp
     adj = torch.sparse.FloatTensor(adj_i, adj_v, adj_s)
 else:
-    adj, feats, labels, idx_train, idx_val = load_cora()
+    adj, feats, labels, idx_train, idx_val, idx_test = load_cora()
 
 # Model
 model = GCN(num_layers=args.layers, 
@@ -59,13 +60,17 @@ optimizer = optim.Adam(model.parameters(), lr=args.lr, weight_decay=args.wd)
 
 # GPU
 if args.gpu:
-    tmp = model, adj, feats, labels, idx_train, idx_val
+    tmp = model, adj, feats, labels, idx_train, idx_val, idx_test
     tmp = [x.cuda() for x in tmp]
-    model, adj, feats, labels, idx_train, idx_val = tmp
+    model, adj, feats, labels, idx_train, idx_val, idx_test = tmp
 
 # Train/Validate
 print('Loaded data in {:.2f}s'.format(time.time() - start))
-if args.val_only:
+if args.test:
+    assert args.model is not None, 'No model to evaluate'
+    loss, acc = validate(model, adj, feats, labels, idx_test)
+    print('Test complete. Loss: {:.4f} \tAcc: {:.4f}'.format(loss, acc))
+elif args.val_only:
     assert args.model is not None, 'No model to evaluate'
     loss, acc = validate(model, adj, feats, labels, idx_val)
     print('Val complete. Loss: {:.4f} \tAcc: {:.4f}'.format(loss, acc))

@@ -44,16 +44,16 @@ def load_cora(path='../data/cora/'):
     labels = torch.LongTensor(np.where(labels)[1])
     adj = scipy_to_torch_sparse(adj)
 
-    return adj, feats, labels, idx_train, idx_val
+    return adj, feats, labels, idx_train, idx_val, idx_test
 
 # For testing
 if __name__ == '__main__':
     import time
     start = time.time()
     if False:
-        adj, feats, labels, idx_train, idx_val = load_cora()
+        adj, feats, labels, idx_train, idx_val, idx_test = load_cora()
         adj_i, adj_v, adj_s = adj._indices(), adj._values(), adj.shape
-        data = (adj_i, adj_v, adj_s, feats, labels, idx_train, idx_val)
+        data = (adj_i, adj_v, adj_s, feats, labels, idx_train, idx_val, idx_test)
         torch.save(data, '../data/cora/preprocessed.pth')
         print('Saved cora in {:.2f}s'.format(time.time() - start))
     else:
