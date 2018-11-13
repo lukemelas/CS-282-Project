@@ -33,12 +33,14 @@ class GraphConvolution(nn.Module):
 
 class GCN(nn.Module):
     '''Graph convolution network'''
-    def __init__(self, num_layers, in_size, h_size, out_size, dropout=0.3):
+    def __init__(self, num_layers, in_size, h_size, out_size, dropout=0.3,
+                 mc_dropout=False):
         super(GCN, self).__init__()
         self.in_size = in_size
         self.h_size = h_size
         self.out_size = out_size
         self.dropout = dropout
+        self.mc_dropout = mc_dropout
         
         # Create graph convolutional layers
         self.gcns = nn.ModuleList()
@@ -49,10 +51,11 @@ class GCN(nn.Module):
 
     def forward(self, x, adj):
         '''ReLU nonlinearity and dropout'''
+        use_dropout = (not self.training) if self.mc_dropout else self.training
         for i in range(len(self.gcns) - 1):
             x = self.gcns[i](x, adj)
             x = F.relu(x)
-            x = F.dropout(x, self.dropout, training=self.training)
+            x = F.dropout(x, self.dropout, training=use_dropout)
         x = self.gcns[-1](x, adj)
         return x
 
