@@ -1,0 +1,9 @@
+[I 21:34:18.155 NotebookApp] Serving notebooks from local directory: /home/nlp/282_project/graph-project
+[I 21:34:18.155 NotebookApp] The Jupyter Notebook is running at:
+[I 21:34:18.155 NotebookApp] https://(nlp-cloud-3 or 127.0.0.1):8888/
+[I 21:34:18.155 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 21:34:37.371 NotebookApp] Kernel started: b4789374-f5f5-43e1-a135-dfe3a0b0a713
+[I 21:34:38.142 NotebookApp] Adapting to protocol v5.1 for kernel b4789374-f5f5-43e1-a135-dfe3a0b0a713
+[I 21:35:06.174 NotebookApp] Kernel interrupted: b4789374-f5f5-43e1-a135-dfe3a0b0a713
+[I 21:35:44.664 NotebookApp] Kernel interrupted: b4789374-f5f5-43e1-a135-dfe3a0b0a713
+[I 21:36:38.076 NotebookApp] Saving file at /gae/GAE Exploration.ipynb

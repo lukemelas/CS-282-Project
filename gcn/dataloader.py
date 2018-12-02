@@ -28,6 +28,7 @@ def load_cora(path='../data/cora/'):
     adj = (np.ones(edges.shape[0]), (edges[:,0], edges[:,1])) # all edges weight 1
     adj = sp_sparse.coo_matrix(adj, shape=(N, N), dtype=np.float32) # --> sparse matrix
     adj = coo_to_symmetric(adj) # --> symmetric adjacency matrix --> wait why?? 
+    adj_orig = adj # for transfering model to gae
     adj = adj + sp_sparse.eye(adj.shape[0]) # add identity (self-links)
 
     # Preprocessing
@@ -43,6 +44,13 @@ def load_cora(path='../data/cora/'):
     feats = torch.from_numpy(np.array(feats.todense()))
     labels = torch.LongTensor(np.where(labels)[1])
     adj = scipy_to_torch_sparse(adj)
+
+    # Save for GAE
+    pdb.set_trace()
+    torch.save({'adj_orig': adj_orig.todense(), 'adj_i': adj.indices, 'adj_v': adj.values,
+                'adj_s': adj.shape, 'feats': feats, 'labels': labels, 
+                'idx_train': idx_train, 'idx_val': idx_val, 'idx_test': idx_test}, 
+                '../data/cora/preprocessed_gcn_data_for_gae.pth')
 
     return adj, feats, labels, idx_train, idx_val, idx_test
 
