@@ -7,3 +7,211 @@
 [I 21:35:06.174 NotebookApp] Kernel interrupted: b4789374-f5f5-43e1-a135-dfe3a0b0a713
 [I 21:35:44.664 NotebookApp] Kernel interrupted: b4789374-f5f5-43e1-a135-dfe3a0b0a713
 [I 21:36:38.076 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 21:38:38.991 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 21:44:38.062 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 21:46:38.087 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 21:48:38.109 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 21:50:38.093 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 21:52:38.113 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 21:54:38.024 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 21:54:42.662 NotebookApp] Kernel interrupted: b4789374-f5f5-43e1-a135-dfe3a0b0a713
+[I 21:55:06.648 NotebookApp] Kernel interrupted: b4789374-f5f5-43e1-a135-dfe3a0b0a713
+[I 21:56:25.056 NotebookApp] Kernel interrupted: b4789374-f5f5-43e1-a135-dfe3a0b0a713
+[I 21:56:38.154 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 21:58:33.626 NotebookApp] Kernel interrupted: b4789374-f5f5-43e1-a135-dfe3a0b0a713
+[I 21:58:37.537 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 21:58:48.325 NotebookApp] Kernel interrupted: b4789374-f5f5-43e1-a135-dfe3a0b0a713
+[W 22:01:38.144 NotebookApp] WebSocket ping timeout after 119831 ms.
+[I 22:01:43.149 NotebookApp] Starting buffering for b4789374-f5f5-43e1-a135-dfe3a0b0a713:54bd2b29926844dcb1783750b761840c
+[I 22:05:42.798 NotebookApp] Adapting to protocol v5.1 for kernel b4789374-f5f5-43e1-a135-dfe3a0b0a713
+[I 22:05:48.385 NotebookApp] Starting buffering for b4789374-f5f5-43e1-a135-dfe3a0b0a713:57c8fdbeffad46fb82d4c9787e7b776b
+[I 22:05:53.984 NotebookApp] Adapting to protocol v5.1 for kernel b4789374-f5f5-43e1-a135-dfe3a0b0a713
+[I 22:05:59.288 NotebookApp] Starting buffering for b4789374-f5f5-43e1-a135-dfe3a0b0a713:0938cb4e378d44b6b614617c80830996
+[I 22:06:07.535 NotebookApp] Adapting to protocol v5.1 for kernel b4789374-f5f5-43e1-a135-dfe3a0b0a713
+[I 22:06:12.648 NotebookApp] Kernel shutdown: b4789374-f5f5-43e1-a135-dfe3a0b0a713
+[I 22:06:22.695 NotebookApp] Kernel started: fbd79ae2-3a35-41ca-978c-d2bec8c87c4c
+[I 22:06:23.713 NotebookApp] Adapting to protocol v5.1 for kernel fbd79ae2-3a35-41ca-978c-d2bec8c87c4c
+[W 22:06:39.028 NotebookApp] 404 GET /static/components/preact/preact.min.js.map (65.112.8.12) 8.16ms referer=None
+[W 22:06:39.039 NotebookApp] 404 GET /static/components/proptypes/index.js.map (65.112.8.12) 1.07ms referer=None
+[W 22:06:39.041 NotebookApp] 404 GET /static/components/preact-compat/preact-compat.min.js.map (65.112.8.12) 0.95ms referer=None
+[I 22:06:50.788 NotebookApp] Starting buffering for fbd79ae2-3a35-41ca-978c-d2bec8c87c4c:478594007b6a43a38689dbf6a2972803
+[I 22:06:56.089 NotebookApp] Adapting to protocol v5.1 for kernel fbd79ae2-3a35-41ca-978c-d2bec8c87c4c
+[W 22:06:57.114 NotebookApp] delete /gae/ok_model.pth
+[I 22:07:04.542 NotebookApp] Copying gae/GAE Exploration.ipynb to /gae
+[I 22:07:10.615 NotebookApp] Kernel started: 9a35b30d-9495-4d44-ad92-7988987f762d
+[I 22:07:11.982 NotebookApp] Adapting to protocol v5.1 for kernel 9a35b30d-9495-4d44-ad92-7988987f762d
+[I 22:07:20.396 NotebookApp] Starting buffering for 9a35b30d-9495-4d44-ad92-7988987f762d:a475b68ee3ec4eb789418d635e72ae6a
+[I 22:08:55.824 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:10:42.830 NotebookApp] Kernel interrupted: fbd79ae2-3a35-41ca-978c-d2bec8c87c4c
+[I 22:10:55.785 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:12:55.838 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:14:56.453 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[W 22:15:39.401 NotebookApp] SSL Error on 9 ('52.175.199.11', 3137): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:39.417 NotebookApp] SSL Error on 9 ('52.175.199.11', 3138): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:39.432 NotebookApp] SSL Error on 9 ('52.175.199.11', 3139): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:39.448 NotebookApp] SSL Error on 9 ('52.175.199.11', 3140): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:39.450 NotebookApp] SSL Error on 9 ('52.175.199.11', 3141): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:44.462 NotebookApp] SSL Error on 9 ('52.175.199.11', 3143): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:44.476 NotebookApp] SSL Error on 9 ('52.175.199.11', 3144): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:44.491 NotebookApp] SSL Error on 9 ('52.175.199.11', 3145): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:44.507 NotebookApp] SSL Error on 9 ('52.175.199.11', 3146): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:44.522 NotebookApp] SSL Error on 9 ('52.175.199.11', 3147): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:44.525 NotebookApp] SSL Error on 9 ('52.175.199.11', 3148): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:44.538 NotebookApp] SSL Error on 9 ('52.175.199.11', 3149): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[I 22:15:50.558 NotebookApp] Malformed HTTP message from 52.175.199.11: Malformed HTTP request line
+[I 22:15:50.567 NotebookApp] 302 GET / (52.175.199.11) 0.48ms
+[W 22:15:55.550 NotebookApp] SSL Error on 37 ('52.175.199.11', 3152): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.551 NotebookApp] SSL Error on 20 ('52.175.199.11', 3139): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.551 NotebookApp] SSL Error on 10 ('52.175.199.11', 3138): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.551 NotebookApp] SSL Error on 25 ('52.175.199.11', 3141): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.551 NotebookApp] SSL Error on 32 ('52.175.199.11', 3153): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.551 NotebookApp] SSL Error on 44 ('52.175.199.11', 3154): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.551 NotebookApp] SSL Error on 46 ('52.175.199.11', 3156): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.552 NotebookApp] SSL Error on 45 ('52.175.199.11', 3155): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.552 NotebookApp] SSL Error on 48 ('52.175.199.11', 3158): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.552 NotebookApp] SSL Error on 50 ('52.175.199.11', 3160): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.552 NotebookApp] SSL Error on 49 ('52.175.199.11', 3159): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.552 NotebookApp] SSL Error on 51 ('52.175.199.11', 3161): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.552 NotebookApp] SSL Error on 47 ('52.175.199.11', 3157): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.553 NotebookApp] SSL Error on 52 ('52.175.199.11', 3162): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.615 NotebookApp] 405 OPTIONS / (52.175.199.11) 0.50ms referer=None
+[I 22:15:55.615 NotebookApp] 302 GET / (52.175.199.11) 0.33ms
+[W 22:15:55.617 NotebookApp] 404 GET /.git/HEAD (52.175.199.11) 1.27ms referer=None
+[W 22:15:55.618 NotebookApp] 404 GET /browseDirectory.jsp (52.175.199.11) 0.89ms referer=None
+[I 22:15:55.619 NotebookApp] Malformed HTTP message from 52.175.199.11: Content-Length too long
+[W 22:15:55.620 NotebookApp] 404 GET /master.jsp (52.175.199.11) 0.93ms referer=None
+[W 22:15:55.621 NotebookApp] 405 PROPFIND / (52.175.199.11) 0.36ms referer=None
+[W 22:15:55.622 NotebookApp] 405 OPTIONS / (52.175.199.11) 0.36ms referer=None
+[W 22:15:55.622 NotebookApp] 405 PROPFIND / (52.175.199.11) 0.35ms referer=None
+[W 22:15:55.623 NotebookApp] 404 GET /flumemaster.jsp (52.175.199.11) 0.89ms referer=None
+[W 22:15:55.624 NotebookApp] 404 GET /nmaplowercheck1543788955 (52.175.199.11) 0.88ms referer=None
+[W 22:15:55.625 NotebookApp] 403 POST / (52.175.199.11): '_xsrf' argument missing from POST
+[W 22:15:55.625 NotebookApp] 403 POST / (52.175.199.11) 0.59ms referer=None
+[W 22:15:55.710 NotebookApp] SSL Error on 25 ('52.175.199.11', 3179): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.711 NotebookApp] SSL Error on 9 ('52.175.199.11', 3181): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.714 NotebookApp] SSL Error on 25 ('52.175.199.11', 3180): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.783 NotebookApp] SSL Error on 10 ('52.175.199.11', 3177): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.784 NotebookApp] SSL Error on 37 ('52.175.199.11', 3185): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.784 NotebookApp] SSL Error on 45 ('52.175.199.11', 3186): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.784 NotebookApp] SSL Error on 46 ('52.175.199.11', 3188): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.784 NotebookApp] SSL Error on 48 ('52.175.199.11', 3192): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.784 NotebookApp] SSL Error on 50 ('52.175.199.11', 3189): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.785 NotebookApp] SSL Error on 51 ('52.175.199.11', 3193): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.785 NotebookApp] SSL Error on 52 ('52.175.199.11', 3194): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.785 NotebookApp] SSL Error on 53 ('52.175.199.11', 3197): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.786 NotebookApp] 405 OPTIONS / (52.175.199.11) 0.54ms referer=None
+[W 22:15:55.787 NotebookApp] 404 GET /evox/about (52.175.199.11) 1.05ms referer=None
+[W 22:15:55.788 NotebookApp] 405 PROPFIND / (52.175.199.11) 0.38ms referer=None
+[W 22:15:55.833 NotebookApp] 404 GET /HNAP1 (52.175.199.11) 0.98ms referer=None
+[W 22:15:55.834 NotebookApp] 405 OPTIONS / (52.175.199.11) 0.37ms referer=None
+[W 22:15:55.834 NotebookApp] SSL Error on 49 ('52.175.199.11', 3191): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.835 NotebookApp] SSL Error on 50 ('52.175.199.11', 3078): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.835 NotebookApp] SSL Error on 47 ('52.175.199.11', 3190): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.835 NotebookApp] 403 POST /sdk (52.175.199.11): '_xsrf' argument missing from POST
+[W 22:15:55.836 NotebookApp] 403 POST /sdk (52.175.199.11) 1.19ms referer=None
+[W 22:15:55.838 NotebookApp] 404 GET /dfshealth.jsp (52.175.199.11) 0.89ms referer=None
+[W 22:15:55.839 NotebookApp] 404 GET /jobtracker.jsp (52.175.199.11) 0.93ms referer=None
+[I 22:15:55.839 NotebookApp] 302 GET / (52.175.199.11) 0.33ms
+[W 22:15:55.841 NotebookApp] 404 GET /rs-status (52.175.199.11) 0.93ms referer=None
+[W 22:15:55.842 NotebookApp] 404 GET /status.jsp (52.175.199.11) 0.88ms referer=None
+[W 22:15:55.897 NotebookApp] SSL Error on 20 ('52.175.199.11', 3081): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.898 NotebookApp] 404 GET /tasktracker.jsp (52.175.199.11) 0.89ms referer=None
+[I 22:15:55.958 NotebookApp] 302 GET /tree? (52.175.199.11) 0.79ms
+[W 22:15:55.959 NotebookApp] 405 OPTIONS / (52.175.199.11) 0.37ms referer=None
+[W 22:15:55.959 NotebookApp] SSL Error on 20 ('52.175.199.11', 3083): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.961 NotebookApp] SSL Error on 9 ('52.175.199.11', 3085): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:55.961 NotebookApp] SSL Error on 10 ('52.175.199.11', 3084): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:56.005 NotebookApp] 405 HEAD / (52.175.199.11) 0.41ms referer=None
+[I 22:15:56.005 NotebookApp] 302 GET / (52.175.199.11) 0.29ms
+[W 22:15:56.006 NotebookApp] 405 VETU / (52.175.199.11) 0.36ms referer=None
+[W 22:15:56.066 NotebookApp] SSL Error on 20 ('52.175.199.11', 3090): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:56.097 NotebookApp] SSL Error on 9 ('52.175.199.11', 3089): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:56.098 NotebookApp] 405 OPTIONS / (52.175.199.11) 0.39ms referer=None
+[W 22:15:56.099 NotebookApp] SSL Error on 9 ('52.175.199.11', 3093): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[I 22:15:56.158 NotebookApp] 302 GET / (52.175.199.11) 0.34ms
+[W 22:15:56.222 NotebookApp] SSL Error on 10 ('52.175.199.11', 3096): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:56.294 NotebookApp] 405 OPTIONS / (52.175.199.11) 0.37ms referer=None
+[W 22:15:56.295 NotebookApp] SSL Error on 9 ('52.175.199.11', 3098): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:56.322 NotebookApp] 405 HEAD / (52.175.199.11) 0.37ms referer=None
+[W 22:15:56.395 NotebookApp] SSL Error on 9 ('52.175.199.11', 3102): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:56.420 NotebookApp] SSL Error on 10 ('52.175.199.11', 3104): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:56.420 NotebookApp] 405 OPTIONS / (52.175.199.11) 0.36ms referer=None
+[W 22:15:56.429 NotebookApp] SSL Error on 10 ('52.175.199.11', 3108): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:56.429 NotebookApp] SSL Error on 20 ('52.175.199.11', 3264): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[I 22:15:56.430 NotebookApp] 302 GET / (52.175.199.11) 0.37ms
+[W 22:15:56.488 NotebookApp] 403 POST / (52.175.199.11): '_xsrf' argument missing from POST
+[W 22:15:56.488 NotebookApp] 403 POST / (52.175.199.11) 0.46ms referer=None
+[W 22:15:56.489 NotebookApp] SSL Error on 9 ('52.175.199.11', 3196): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:56.572 NotebookApp] 405 OPTIONS / (52.175.199.11) 0.37ms referer=None
+[W 22:15:56.613 NotebookApp] SSL Error on 10 ('52.175.199.11', 3099): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:56.613 NotebookApp] SSL Error on 9 ('52.175.199.11', 3101): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:56.675 NotebookApp] SSL Error on 10 ('52.175.199.11', 3106): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:56.676 NotebookApp] 405 OPTIONS / (52.175.199.11) 0.43ms referer=None
+[W 22:15:56.708 NotebookApp] 405 OPTIONS / (52.175.199.11) 0.38ms referer=None
+[I 22:15:56.714 NotebookApp] 302 GET /tree? (52.175.199.11) 0.49ms
+[W 22:15:56.715 NotebookApp] SSL Error on 9 ('52.175.199.11', 3111): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:56.721 NotebookApp] 405 OPTIONS / (52.175.199.11) 0.37ms referer=None
+[W 22:15:56.722 NotebookApp] SSL Error on 9 ('52.175.199.11', 3113): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:56.736 NotebookApp] SSL Error on 9 ('52.175.199.11', 3115): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[I 22:15:56.743 NotebookApp] 302 GET /random404page/ (52.175.199.11) 0.33ms
+[W 22:15:56.747 NotebookApp] SSL Error on 9 ('52.175.199.11', 3117): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:56.768 NotebookApp] 404 GET /random404page (52.175.199.11) 0.92ms referer=None
+[W 22:15:56.795 NotebookApp] SSL Error on 9 ('52.175.199.11', 3119): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:56.803 NotebookApp] 404 GET /wp%-login (52.175.199.11) 0.93ms referer=None
+[W 22:15:56.806 NotebookApp] SSL Error on 9 ('52.175.199.11', 3121): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:56.813 NotebookApp] 404 GET /rails/info/properties (52.175.199.11) 0.93ms referer=None
+[W 22:15:56.816 NotebookApp] SSL Error on 9 ('52.175.199.11', 3123): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:56.824 NotebookApp] 404 GET /administrator (52.175.199.11) 0.88ms referer=None
+[W 22:15:56.829 NotebookApp] SSL Error on 9 ('52.175.199.11', 3125): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[I 22:15:56.850 NotebookApp] 302 GET /admin/ (52.175.199.11) 0.33ms
+[W 22:15:56.852 NotebookApp] SSL Error on 9 ('52.175.199.11', 3127): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:15:56.874 NotebookApp] 404 GET /admin (52.175.199.11) 0.94ms referer=None
+[W 22:15:56.893 NotebookApp] SSL Error on 9 ('52.175.199.11', 3129): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[I 22:18:56.455 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:20:56.298 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:22:55.789 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:24:55.800 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:25:18.752 NotebookApp] Starting buffering for fbd79ae2-3a35-41ca-978c-d2bec8c87c4c:ef82d28da78f49d58c2597921637d8eb
+[I 22:25:21.434 NotebookApp] Kernel restarted: fbd79ae2-3a35-41ca-978c-d2bec8c87c4c
+[I 22:25:22.648 NotebookApp] Adapting to protocol v5.1 for kernel fbd79ae2-3a35-41ca-978c-d2bec8c87c4c
+[I 22:25:22.649 NotebookApp] Restoring connection for fbd79ae2-3a35-41ca-978c-d2bec8c87c4c:ef82d28da78f49d58c2597921637d8eb
+[I 22:25:22.649 NotebookApp] Replaying 6 buffered messages
+[I 22:26:55.697 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:27:02.337 NotebookApp] Starting buffering for fbd79ae2-3a35-41ca-978c-d2bec8c87c4c:ef82d28da78f49d58c2597921637d8eb
+[I 22:27:04.252 NotebookApp] Kernel restarted: fbd79ae2-3a35-41ca-978c-d2bec8c87c4c
+[I 22:27:05.273 NotebookApp] Adapting to protocol v5.1 for kernel fbd79ae2-3a35-41ca-978c-d2bec8c87c4c
+[I 22:27:05.274 NotebookApp] Restoring connection for fbd79ae2-3a35-41ca-978c-d2bec8c87c4c:ef82d28da78f49d58c2597921637d8eb
+[I 22:27:05.274 NotebookApp] Replaying 6 buffered messages
+[I 22:28:37.479 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:28:37.527 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:28:37.727 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:28:38.028 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:28:38.316 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:28:58.227 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:30:58.190 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:32:58.202 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:33:23.444 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:34:58.217 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:36:58.183 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:38:57.790 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:40:58.175 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:44:58.170 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:46:57.950 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:48:58.908 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:50:58.082 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+THCudaCheck FAIL file=/opt/conda/conda-bld/pytorch_1533672544752/work/aten/src/THC/THCGeneral.cpp line=663 error=2 : out of memory
+[I 22:52:58.166 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:54:58.252 NotebookApp] Saving file at /gae/GAE Exploration.ipynb
+[I 22:55:29.673 NotebookApp] Starting buffering for fbd79ae2-3a35-41ca-978c-d2bec8c87c4c:ef82d28da78f49d58c2597921637d8eb
+[I 22:55:33.486 NotebookApp] Adapting to protocol v5.1 for kernel 9a35b30d-9495-4d44-ad92-7988987f762d
+[I 22:55:55.150 NotebookApp] Starting buffering for 9a35b30d-9495-4d44-ad92-7988987f762d:79bd69b84273429cbbd3cc9dbca9452b
+[I 22:55:55.566 NotebookApp] Kernel restarted: 9a35b30d-9495-4d44-ad92-7988987f762d
+[I 22:55:57.183 NotebookApp] Adapting to protocol v5.1 for kernel 9a35b30d-9495-4d44-ad92-7988987f762d
+[I 22:55:57.184 NotebookApp] Restoring connection for 9a35b30d-9495-4d44-ad92-7988987f762d:79bd69b84273429cbbd3cc9dbca9452b
+[I 22:55:57.184 NotebookApp] Replaying 6 buffered messages
+[I 22:56:16.253 NotebookApp] KernelRestarter: restarting kernel (1/5), keep random ports
+[I 22:56:29.190 NotebookApp] Starting buffering for 9a35b30d-9495-4d44-ad92-7988987f762d:79bd69b84273429cbbd3cc9dbca9452b
+[C 22:58:07.419 NotebookApp] received signal 15, stopping
+[I 22:58:07.419 NotebookApp] Shutting down 2 kernels
+[I 22:58:07.720 NotebookApp] Kernel shutdown: fbd79ae2-3a35-41ca-978c-d2bec8c87c4c
+[I 22:58:07.721 NotebookApp] Kernel shutdown: 9a35b30d-9495-4d44-ad92-7988987f762d
