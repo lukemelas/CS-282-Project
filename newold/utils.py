@@ -1,10 +1,12 @@
 import numpy as np
 import scipy.sparse as sp
 import torch
+import pdb
 
 
 def encode_onehot(labels):
-    classes = set(labels)
+    # classes = set(labels) # :(
+    classes = ['Theory', 'Probabilistic_Methods', 'Genetic_Algorithms', 'Rule_Learning', 'Case_Based', 'Neural_Networks', 'Reinforcement_Learning']
     classes_dict = {c: np.identity(len(classes))[i, :] for i, c in enumerate(classes)}
     labels_onehot = np.array(list(map(classes_dict.get, labels)), dtype=np.int32)
     return labels_onehot

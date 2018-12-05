@@ -2,14 +2,63 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+import torch.distributions as ds
+import pdb
 
+
+class VariationalAttentionNet(nn.Module):
+    def __init__(self, nfeat=128, nhid=16, nout=1, dropout=0.5):
+        super(VariationalAttentionNet, self).__init__()
+        self.lin1 = nn.Linear(nfeat * 2, nhid)
+        self.lin21 = nn.Linear(nhid, nout)
+        self.lin22 = nn.Linear(nhid, nout)
+        self.dropout = dropout
+
+    def get_log_p_minus_log_q(self, q, p, z):
+        return p.log_prob(z).sum() - q.log_prob(z).sum()
+
+    def forward(self, x1, x2):
+        x = torch.cat([x1, x2], dim=1)
+        x = F.relu(self.lin1(x))
+
+        # Create attention distribution
+        mu = self.lin21(x)
+        # print("mu", mu)
+        lv = self.lin22(x)
+        # print("var", F.softplus(lv))
+        # pdb.set_trace()
+
+        # Sample z
+        q = ds.Normal(mu, F.softplus(lv))
+        p = ds.Normal(torch.zeros(1).cuda(), torch.ones(1).cuda() )
+        if self.training:
+            z = q.rsample() + 0 * torch.randn(mu.shape).cuda() # q.rsample()
+            # print("z", z)
+        else:
+            z = q.loc
+            # print("z", z)
+        qmp = 0 - self.get_log_p_minus_log_q(q, p, z) 
+        return z, qmp
+
+class AttentionNet(nn.Module):
+    def __init__(self, nfeat=128, nhid=16, nout=1, dropout=0.5):
+        super(AttentionNet, self).__init__()
+        self.lin1 = nn.Linear(nfeat * 2, nhid)
+        self.lin2 = nn.Linear(nhid, nout)
+        self.dropout = dropout
+        
+    def forward(self, x1, x2):
+        x = torch.cat([x1, x2], dim=1)
+        x = F.relu(self.lin1(x))
+        x = self.lin2(x)
+        return x, 0
 
 class GraphAttentionLayer(nn.Module):
     """
     Simple GAT layer, similar to https://arxiv.org/abs/1710.10903
     """
 
-    def __init__(self, in_features, out_features, dropout, alpha, concat=True):
+    def __init__(self, in_features, out_features, dropout, alpha, concat=True, attn='variational'):
         super(GraphAttentionLayer, self).__init__()
         self.dropout = dropout
         self.in_features = in_features
@@ -19,8 +68,14 @@ class GraphAttentionLayer(nn.Module):
 
         self.W = nn.Parameter(torch.zeros(size=(in_features, out_features)))
         nn.init.xavier_uniform_(self.W.data, gain=1.414)
-        self.a = nn.Parameter(torch.zeros(size=(2*out_features, 1)))
-        nn.init.xavier_uniform_(self.a.data, gain=1.414)
+        
+        # self.a = nn.Parameter(torch.zeros(size=(2*out_features, 1)))
+        # nn.init.xavier_uniform_(self.a.data, gain=1.414)
+       
+        if attn == 'variational': 
+            self.att = VariationalAttentionNet(out_features)
+        else:
+            self.att = AttentionNet(out_features)
 
         self.leakyrelu = nn.LeakyReLU(self.alpha)
 
@@ -28,8 +83,10 @@ class GraphAttentionLayer(nn.Module):
         h = torch.mm(input, self.W)
         N = h.size()[0]
 
-        a_input = torch.cat([h.repeat(1, N).view(N * N, -1), h.repeat(N, 1)], dim=1).view(N, -1, 2 * self.out_features)
-        e = self.leakyrelu(torch.matmul(a_input, self.a).squeeze(2))
+        # a_input = torch.cat([h.repeat(1, N).view(N * N, -1), h.repeat(N, 1)], dim=1).view(N, -1, 2 * self.out_features)
+        # e = self.leakyrelu(torch.matmul(a_input, self.a).squeeze(2))
+        # e = self.leakyrelu(torch.matmul(h, h.t()))
+        e, pmq = self.att(h, h)
 
         zero_vec = -9e15*torch.ones_like(e)
         attention = torch.where(adj > 0, e, zero_vec)
@@ -38,9 +95,9 @@ class GraphAttentionLayer(nn.Module):
         h_prime = torch.matmul(attention, h)
 
         if self.concat:
-            return F.elu(h_prime)
+            return F.elu(h_prime), pmq
         else:
-            return h_prime
+            return h_prime, pmq
 
     def __repr__(self):
         return self.__class__.__name__ + ' (' + str(self.in_features) + ' -> ' + str(self.out_features) + ')'
