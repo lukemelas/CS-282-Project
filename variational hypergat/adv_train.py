@@ -15,7 +15,7 @@ import torch.optim as optim
 from torch.autograd import Variable
 import pdb
 
-from utils import load_data, accuracy, normalize_adj
+from utils_old import load_adv_data
 from models import GAT, SpGAT
 
 # Training settings
@@ -24,7 +24,7 @@ parser.add_argument('--no-cuda', action='store_true', default=False, help='Disab
 parser.add_argument('--fastmode', action='store_true', default=False, help='Validate during training pass.')
 parser.add_argument('--sparse', action='store_true', default=False, help='GAT with sparse version or not.')
 parser.add_argument('--seed', type=int, default=72, help='Random seed.')
-parser.add_argument('--epochs', type=int, default=800, help='Number of epochs to train.')
+parser.add_argument('--epochs', type=int, default=750, help='Number of epochs to train.')
 parser.add_argument('--lr', type=float, default=0.005, help='Initial learning rate.')
 parser.add_argument('--weight_decay', type=float, default=5e-4, help='Weight decay (L2 loss on parameters).')
 parser.add_argument('--hidden', type=int, default=8, help='Number of hidden units.')
@@ -32,18 +32,19 @@ parser.add_argument('--nb_heads', type=int, default=8, help='Number of head atte
 parser.add_argument('--dropout', type=float, default=0.6, help='Dropout rate (1 - keep probability).')
 parser.add_argument('--alpha', type=float, default=0.2, help='Alpha for the leaky_relu.')
 parser.add_argument('--patience', type=int, default=100, help='Patience')
+parser.add_argument('--node', type=int, default=0, help='Node to adversarially mess up')
 
 args = parser.parse_args()
 args.cuda = not args.no_cuda and torch.cuda.is_available()
 
-random.seed(args.seed)
-np.random.seed(args.seed)
-torch.manual_seed(args.seed)
-if args.cuda:
-    torch.cuda.manual_seed(args.seed)
+# random.seed(args.seed)
+# np.random.seed(args.seed)
+# torch.manual_seed(args.seed)
+# if args.cuda:
+#     torch.cuda.manual_seed(args.seed)
 
 # Load data
-adj, features, labels, idx_train, idx_val, idx_test = load_data()
+adj, features, labels, idx_train, idx_val, idx_test = load_adv_data(args.node)
 
 # Model and optimizer
 if args.sparse:
@@ -103,14 +104,16 @@ def train(epoch):
     return loss_val.data[0]
 
 
-def compute_test():
+def compute_test(node):
     model.eval()
     output, _ = model(features, adj)
     loss_test = F.nll_loss(output[idx_test], labels[idx_test])
     acc_test = accuracy(output[idx_test], labels[idx_test])
+    acc_adv = accuracy(output[node], labels[node])
     print("Test set results:",
           "loss= {:.4f}".format(loss_test.data[0]),
           "accuracy= {:.4f}".format(acc_test.data[0]))
+    return acc_adv
 
 if args.epochs > 0:
     # Train model
@@ -149,12 +152,18 @@ if args.epochs > 0:
     print("Total time elapsed: {:.4f}s".format(time.time() - t_total))
 
     # Restore best model
-    print('Loading {}th epoch'.format(best_epoch))
-    model.load_state_dict(torch.load('{}.pkl'.format(best_epoch)))
-    torch.save(model, 'model.pth')
+#     print('Loading {}th epoch'.format(best_epoch))
+#     model.load_state_dict(torch.load('{}.pkl'.format(best_epoch)))
+#     torch.save(model, 'model.pth')
+
+
+torch.save({'model': model.state_dict(),
+            'node': args.node}, f'model_{args.node}.pth')
+
 
 # model.load_state_dict(torch.load('data/578.pkl'))
 # print(features)
 
 # Testing
-compute_test()
+x = compute_test(node)
+torch.save({'node': args.node, 'gotit': x}, f'res/{args.node}.pth')

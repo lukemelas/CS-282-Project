@@ -1,0 +1,30 @@
+probs = torch.exp(output).cpu().detach().numpy() #probabilistic output here 
+labels = labels.cpu().detach().numpy()
+bins = np.arange(0, 1.1, 0.05) #keep it 20 bins
+inds = np.digitize(probs, bins) - 1
+
+def ECE(inds, labels, bins):
+    ## Produce Plot
+    labels_onehot = torch.zeros(7, len(labels)).scatter_(0,torch.LongTensor([labels]),1).numpy().T
+    bin_avgs = (bins[:-1] + bins[1:]) / 2
+
+    ece = 0
+    true_probs = []
+    for idx, b in enumerate(bins):
+        num = np.sum(inds == idx)
+        # print(labels_onehot, inds == idx, 'value', labels_onehot[inds == idx])
+        correct = np.sum(labels_onehot[inds == idx])
+        true_probs.append(correct/num)
+        if num > 0:
+            print(bin_avgs[idx], correct/num)
+            ece += num / (7 * len(labels)) * np.abs(bin_avgs[idx] - correct/num)     
+            # print(num / (7 * len(labels)) * np.abs(bin_avgs[idx] - correct/num))
+
+    import matplotlib.pyplot as plt
+    plt.bar(bin_avgs, true_probs[1:], width=bins[1]-bins[0]-0.01, color='blue', alpha=0.5) #true
+    plt.bar(bin_avgs, bin_avgs, width=bins[1]-bins[0]-0.01, color='orange', alpha=0.5) #ideal
+    plt.show()
+
+    print("ECE", ece)
+    
+ECE(inds[idx_test], labels[idx_test], bins) #whole set

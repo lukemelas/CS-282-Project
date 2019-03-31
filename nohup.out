@@ -1,0 +1,1512 @@
+[W 00:14:42.505 NotebookApp] Collisions detected in /home/nlp/.jupyter/jupyter_notebook_config.py and /home/nlp/.jupyter/jupyter_notebook_config.json config files. /home/nlp/.jupyter/jupyter_notebook_config.json has higher priority: {
+      "NotebookApp": {
+        "password": "'sha1:84165a00c729:43512e124e4421587d9ada12e642a13f363e7c92' ignored, using 'sha1:4ae0c8182289:2025c9c0789326a99c6f1129081a1bc93cfcd00f'"
+      }
+    }
+[I 00:14:42.692 NotebookApp] Serving notebooks from local directory: /home/nlp/282_project/graph-project
+[I 00:14:42.692 NotebookApp] The Jupyter Notebook is running at:
+[I 00:14:42.692 NotebookApp] https://(nlp-cloud-3 or 127.0.0.1):8888/
+[I 00:14:42.692 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 00:14:51.603 NotebookApp] 302 GET /notebooks/graph-project/variational%20hypergat/ (65.112.8.5) 0.68ms
+[W 00:14:51.727 NotebookApp] 404 GET /notebooks/graph-project/variational%20hypergat (65.112.8.5): No such file or directory: graph-project/variational hypergat
+[W 00:14:51.750 NotebookApp] 404 GET /notebooks/graph-project/variational%20hypergat (65.112.8.5) 24.88ms referer=None
+[I 00:15:02.919 NotebookApp] 302 GET /notebooks/variational%20hypergat (65.112.8.5) 1.12ms
+[W 00:16:05.071 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560186 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:16:05.071 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:16:05.071 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560186 (65.112.8.3) 1.17ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:16:05.324 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 00:16:05.354 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:16:05.940 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:16:05.941 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 00:16:05.941 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 00:16:05.941 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 773.40ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[W 00:18:05.061 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560187 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:18:05.061 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:18:05.061 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560187 (65.112.8.3) 1.19ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:18:05.311 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 00:18:05.390 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:18:05.391 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:18:05.391 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 00:18:05.391 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 00:18:05.391 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 237.74ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[W 00:20:05.071 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560188 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:20:05.071 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:20:05.072 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560188 (65.112.8.3) 1.15ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:20:05.332 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 00:20:05.376 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:20:05.376 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:20:05.376 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 00:20:05.377 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 00:20:05.377 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 200.65ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:20:09.192 NotebookApp] Saving file at /variational hypergat/train.py
+[I 00:20:09.429 NotebookApp] Saving file at /variational hypergat/train.py
+[W 00:21:21.439 NotebookApp] 404 POST /api/contents/variational%2520hypergat (65.112.8.5): No such directory: /variational%20hypergat
+[W 00:21:21.439 NotebookApp] No such directory: /variational%%20hypergat
+[W 00:21:21.439 NotebookApp] 404 POST /api/contents/variational%2520hypergat (65.112.8.5) 1.30ms referer=https://52.183.33.13:8888/tree/variational%20hypergat
+[W 00:21:32.315 NotebookApp] 404 POST /api/contents/variational%2520hypergat (65.112.8.5): No such directory: /variational%20hypergat
+[W 00:21:32.315 NotebookApp] No such directory: /variational%%20hypergat
+[W 00:21:32.315 NotebookApp] 404 POST /api/contents/variational%2520hypergat (65.112.8.5) 1.29ms referer=https://52.183.33.13:8888/tree/variational%20hypergat
+[I 00:21:43.570 NotebookApp] Creating new notebook in /variational hypergat
+[I 00:21:48.648 NotebookApp] Kernel started: 80c07b68-dd72-403b-b757-bd4b1e9508a1
+[I 00:21:50.438 NotebookApp] Adapting to protocol v5.1 for kernel 80c07b68-dd72-403b-b757-bd4b1e9508a1
+[W 00:22:05.084 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560189 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:22:05.085 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:22:05.085 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560189 (65.112.8.3) 1.25ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:22:05.375 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 00:22:05.418 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:22:05.418 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:22:05.419 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 00:22:05.419 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 00:22:05.419 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 213.45ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:23:49.210 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[W 00:24:05.048 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560190 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:24:05.048 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:24:05.048 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560190 (65.112.8.3) 1.20ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:24:05.302 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 00:24:05.384 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:24:05.385 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:24:05.385 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 00:24:05.385 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 00:24:05.385 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 240.73ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:25:49.203 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[W 00:26:05.086 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560191 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:26:05.086 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:26:05.086 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560191 (65.112.8.3) 1.23ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:26:05.359 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 00:26:05.432 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:26:05.432 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:26:05.433 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 00:26:05.433 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 00:26:05.433 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 254.26ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:27:48.762 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[W 00:28:05.034 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560192 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:28:05.034 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:28:05.034 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560192 (65.112.8.3) 1.25ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:28:05.294 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 00:28:05.336 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:28:05.337 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:28:05.337 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 00:28:05.337 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 00:28:05.337 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 205.62ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:29:48.834 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[W 00:30:05.034 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560193 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:30:05.034 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:30:05.034 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560193 (65.112.8.3) 1.20ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:30:05.288 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 00:30:05.389 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:30:05.390 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:30:05.390 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 00:30:05.390 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 00:30:05.390 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 262.52ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:31:48.880 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[W 00:32:05.031 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560194 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:32:05.031 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:32:05.031 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560194 (65.112.8.3) 1.65ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:32:05.290 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 00:32:05.386 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:32:05.386 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:32:05.386 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 00:32:05.387 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 00:32:05.387 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 261.31ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:33:49.570 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[W 00:34:05.031 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560195 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:34:05.031 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:34:05.032 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560195 (65.112.8.3) 1.19ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:34:05.284 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 00:34:05.344 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:34:05.344 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:34:05.344 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 00:34:05.344 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 00:34:05.344 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 219.76ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:35:48.848 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[W 00:36:05.021 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560196 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:36:05.021 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:36:05.021 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560196 (65.112.8.3) 1.19ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:36:05.270 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 00:36:05.315 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:36:05.315 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:36:05.315 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 00:36:05.316 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 00:36:05.316 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 200.81ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:37:48.790 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[W 00:38:05.014 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560197 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:38:05.014 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:38:05.015 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560197 (65.112.8.3) 1.21ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:38:05.274 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 00:38:05.318 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:38:05.319 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:38:05.319 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 00:38:05.320 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 00:38:05.320 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 210.15ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:39:51.198 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[W 00:40:05.013 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560198 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:40:05.013 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:40:05.014 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560198 (65.112.8.3) 1.46ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:40:05.345 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 00:40:05.396 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:40:05.397 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:40:05.397 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 00:40:05.397 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 00:40:05.397 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 287.95ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:41:49.033 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[W 00:42:05.179 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560199 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:42:05.179 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:42:05.180 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560199 (65.112.8.3) 1.15ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:42:05.623 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 00:42:05.662 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:42:05.663 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:42:05.663 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 00:42:05.663 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 00:42:05.663 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 384.51ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:43:48.846 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[W 00:44:05.022 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560200 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:44:05.023 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:44:05.023 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560200 (65.112.8.3) 1.23ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:44:05.285 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 00:44:05.357 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:44:05.358 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:44:05.358 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 00:44:05.358 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 00:44:05.358 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 230.54ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:45:49.052 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[W 00:46:04.989 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560201 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:46:04.990 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:46:04.990 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560201 (65.112.8.3) 1.19ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:46:05.238 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 00:46:05.304 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:46:05.304 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:46:05.304 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 00:46:05.304 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 00:46:05.305 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 220.90ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:47:48.853 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[W 00:48:05.027 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560202 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:48:05.027 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:48:05.027 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560202 (65.112.8.3) 1.23ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:48:05.299 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 00:48:05.344 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:48:05.344 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:48:05.344 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 00:48:05.345 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 00:48:05.345 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 217.63ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:49:49.011 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[W 00:50:05.003 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560203 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:50:05.003 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:50:05.003 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560203 (65.112.8.3) 1.16ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:50:05.263 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 00:50:05.362 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:50:05.363 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:50:05.363 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 00:50:05.363 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 00:50:05.363 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 265.54ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:51:49.105 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[W 00:52:05.055 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560204 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:52:05.055 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:52:05.056 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560204 (65.112.8.3) 1.19ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:52:05.309 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 00:52:05.529 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:52:05.529 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:52:05.529 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 00:52:05.530 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 00:52:05.530 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 376.27ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:53:49.639 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[W 00:54:05.048 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560205 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:54:05.049 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:54:05.049 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560205 (65.112.8.3) 1.19ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:54:05.727 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 00:54:05.772 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:54:05.773 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:54:05.773 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 00:54:05.773 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 00:54:05.773 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 629.06ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[W 00:56:05.007 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560206 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:56:05.007 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:56:05.008 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560206 (65.112.8.3) 1.29ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:56:05.256 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 00:56:05.333 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:56:05.333 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:56:05.333 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 00:56:05.334 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 00:56:05.334 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 234.34ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:57:48.733 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[W 00:58:04.981 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560207 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:58:04.981 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 00:58:04.981 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560207 (65.112.8.3) 1.22ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:58:05.236 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 00:58:05.308 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:58:05.309 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 00:58:05.309 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 00:58:05.309 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 00:58:05.309 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 234.45ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 00:59:48.740 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[W 01:00:04.980 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560208 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 01:00:04.980 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 01:00:04.981 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560208 (65.112.8.3) 1.17ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 01:00:05.236 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 01:00:05.295 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 01:00:05.295 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 01:00:05.296 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 01:00:05.296 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 01:00:05.296 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 218.99ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 01:01:49.191 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[W 01:02:04.993 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560209 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 01:02:04.993 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 01:02:04.994 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560209 (65.112.8.3) 1.18ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 01:02:05.279 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 01:02:05.327 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 01:02:05.327 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 01:02:05.328 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 01:02:05.328 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 01:02:05.328 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 242.56ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 01:02:29.845 NotebookApp] Starting buffering for 80c07b68-dd72-403b-b757-bd4b1e9508a1:4fa7c6e6e5db4e328d4eba165dc0df9f
+[I 01:02:30.453 NotebookApp] Kernel restarted: 80c07b68-dd72-403b-b757-bd4b1e9508a1
+[I 01:02:31.505 NotebookApp] Adapting to protocol v5.1 for kernel 80c07b68-dd72-403b-b757-bd4b1e9508a1
+[I 01:02:31.505 NotebookApp] Restoring connection for 80c07b68-dd72-403b-b757-bd4b1e9508a1:4fa7c6e6e5db4e328d4eba165dc0df9f
+[I 01:02:31.506 NotebookApp] Replaying 6 buffered messages
+[I 01:03:48.732 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[W 01:06:55.922 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560210 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 01:06:55.922 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 01:06:55.922 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560210 (65.112.8.3) 1.24ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 01:06:56.173 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 01:06:56.218 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 01:06:56.218 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 01:06:56.218 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 01:06:56.219 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 01:06:56.219 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 204.60ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[W 01:08:55.447 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560211 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 01:08:55.448 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 01:08:55.448 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560211 (65.112.8.3) 1.15ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 01:08:55.625 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 01:08:55.685 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 01:08:55.686 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 01:08:55.686 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 01:08:55.686 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 01:08:55.686 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 144.24ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[W 01:10:55.455 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560212 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 01:10:55.455 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 01:10:55.455 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560212 (65.112.8.3) 1.19ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 01:10:55.643 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 01:10:55.689 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 01:10:55.690 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 01:10:55.690 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 01:10:55.690 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 01:10:55.690 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 130.28ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[W 01:12:55.441 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560213 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 01:12:55.441 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 01:12:55.442 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560213 (65.112.8.3) 1.16ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 01:12:55.614 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 01:12:55.668 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 01:12:55.669 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 01:12:55.669 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 01:12:55.669 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 01:12:55.669 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 134.44ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[W 01:14:55.439 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560214 (65.112.8.3): No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 01:14:55.440 NotebookApp] No such file or directory: graph-project/gcn/Standard GCN Analysis.ipynb
+[W 01:14:55.440 NotebookApp] 404 GET /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb?content=0&_=1544485560214 (65.112.8.3) 1.17ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[I 01:14:55.617 NotebookApp] Uploading file to /graph-project/gcn/Standard GCN Analysis.ipynb
+[E 01:14:55.663 NotebookApp] Error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+    Traceback (most recent call last):
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/anaconda/envs/py3/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/anaconda/envs/py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 01:14:55.664 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3): Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[W 01:14:55.664 NotebookApp] Unexpected error while saving file: graph-project/gcn/Standard GCN Analysis.ipynb [Errno 2] No such file or directory: '/home/nlp/282_project/graph-project/graph-project/gcn/Standard GCN Analysis.ipynb'
+[E 01:14:55.664 NotebookApp] {
+      "Host": "52.183.33.13:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "46036",
+      "Origin": "https://52.183.33.13:8888",
+      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 11021.81.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016",
+      "Dnt": "1",
+      "Referer": "https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+      "Cookie": "_xsrf=2|cc63240a|bd2c4bbe29430d899f14e4d4cf53ccd6|1544403016; username-52-183-33-13-8889=\"2|1:0|10:1544467664|26:username-52-183-33-13-8889|44:MGU2M2Q0NmM3Zjc2NDQ2MjhkMDJmOWI1ODVlNjQyNGU=|25fbc383e0cc62561a18894ffed83ab5ef7448ac7887e792043029d319996754\"; username-52-183-33-13-8888=\"2|1:0|10:1544485557|26:username-52-183-33-13-8888|44:MzI5NzE3OTBkZTM0NGY2ZDhhNGE5MWViMzZlYWU1MzE=|f835401efb776d075a328d7e82d5b75d37c0f332ed94336ca9af31f13009fa24\""
+    }
+[E 01:14:55.664 NotebookApp] 500 PUT /api/contents/graph-project/gcn/Standard%20GCN%20Analysis.ipynb (65.112.8.3) 130.30ms referer=https://52.183.33.13:8888/notebooks/graph-project/gcn/Standard%20GCN%20Analysis.ipynb
+[W 01:15:54.210 NotebookApp] 404 GET /api/contents/graph-project/gcn?type=directory&_=1544485466502 (65.112.8.3): No such file or directory: graph-project/gcn
+[W 01:15:54.210 NotebookApp] No such file or directory: graph-project/gcn
+[W 01:15:54.210 NotebookApp] 404 GET /api/contents/graph-project/gcn?type=directory&_=1544485466502 (65.112.8.3) 0.91ms referer=https://52.183.33.13:8888/tree/graph-project/gcn
+[I 01:17:49.276 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[I 01:19:48.728 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[I 01:21:48.751 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[I 01:27:49.276 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[I 01:29:48.735 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[I 01:31:49.184 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[I 01:31:52.908 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[W 01:32:01.279 NotebookApp] 404 GET /api/contents/graph-project/variational%20hypergat?type=directory&_=1544486347217 (65.112.8.5): No such file or directory: graph-project/variational hypergat
+[W 01:32:01.279 NotebookApp] No such file or directory: graph-project/variational hypergat
+[W 01:32:01.279 NotebookApp] 404 GET /api/contents/graph-project/variational%20hypergat?type=directory&_=1544486347217 (65.112.8.5) 1.07ms referer=https://52.183.33.13:8888/tree/graph-project/variational%20hypergat
+[I 01:32:16.860 NotebookApp] 302 GET / (65.112.8.3) 0.46ms
+[I 01:32:20.554 NotebookApp] Kernel started: 25e50e5b-1043-40a0-aaf9-a30cd4ad4768
+[I 01:32:21.294 NotebookApp] Adapting to protocol v5.1 for kernel 25e50e5b-1043-40a0-aaf9-a30cd4ad4768
+[I 01:32:48.383 NotebookApp] Adapting to protocol v5.1 for kernel 25e50e5b-1043-40a0-aaf9-a30cd4ad4768
+[I 01:33:48.786 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[W 01:34:21.119 NotebookApp] Notebook gcn/Cora GCN BBB.ipynb is not trusted
+[I 01:34:21.546 NotebookApp] Kernel started: c2598ec7-d2f1-4b89-8fd0-2c4322721c03
+[I 01:34:22.209 NotebookApp] Adapting to protocol v5.1 for kernel c2598ec7-d2f1-4b89-8fd0-2c4322721c03
+[I 01:34:47.760 NotebookApp] Saving file at /gcn/Standard GCN Analysis.ipynb
+[I 01:35:01.142 NotebookApp] Saving file at /gcn/Cora GCN BBB.ipynb
+[W 01:35:01.143 NotebookApp] Notebook gcn/Cora GCN BBB.ipynb is not trusted
+[I 01:35:49.187 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[I 01:36:21.642 NotebookApp] Saving file at /gcn/Cora GCN BBB.ipynb
+[W 01:36:21.642 NotebookApp] Notebook gcn/Cora GCN BBB.ipynb is not trusted
+[I 01:36:48.564 NotebookApp] Saving file at /gcn/Standard GCN Analysis.ipynb
+[I 01:38:21.637 NotebookApp] Saving file at /gcn/Cora GCN BBB.ipynb
+[W 01:38:21.637 NotebookApp] Notebook gcn/Cora GCN BBB.ipynb is not trusted
+[I 01:38:47.667 NotebookApp] Saving file at /gcn/Standard GCN Analysis.ipynb
+[I 01:40:21.649 NotebookApp] Saving file at /gcn/Cora GCN BBB.ipynb
+[W 01:40:21.649 NotebookApp] Notebook gcn/Cora GCN BBB.ipynb is not trusted
+[I 01:40:48.569 NotebookApp] Saving file at /gcn/Standard GCN Analysis.ipynb
+[I 01:42:21.641 NotebookApp] Saving file at /gcn/Cora GCN BBB.ipynb
+[W 01:42:21.642 NotebookApp] Notebook gcn/Cora GCN BBB.ipynb is not trusted
+[I 01:44:21.644 NotebookApp] Saving file at /gcn/Cora GCN BBB.ipynb
+[W 01:44:21.644 NotebookApp] Notebook gcn/Cora GCN BBB.ipynb is not trusted
+[I 01:46:21.639 NotebookApp] Saving file at /gcn/Cora GCN BBB.ipynb
+[W 01:46:21.640 NotebookApp] Notebook gcn/Cora GCN BBB.ipynb is not trusted
+[I 01:46:42.472 NotebookApp] Kernel interrupted: c2598ec7-d2f1-4b89-8fd0-2c4322721c03
+[I 01:46:47.450 NotebookApp] Starting buffering for c2598ec7-d2f1-4b89-8fd0-2c4322721c03:a41c38cb10424aa58878e206a3cfda51
+[I 01:46:47.757 NotebookApp] Kernel restarted: c2598ec7-d2f1-4b89-8fd0-2c4322721c03
+[I 01:46:48.795 NotebookApp] Adapting to protocol v5.1 for kernel c2598ec7-d2f1-4b89-8fd0-2c4322721c03
+[I 01:46:48.796 NotebookApp] Restoring connection for c2598ec7-d2f1-4b89-8fd0-2c4322721c03:a41c38cb10424aa58878e206a3cfda51
+[I 01:46:48.796 NotebookApp] Replaying 3 buffered messages
+[I 01:48:22.192 NotebookApp] Saving file at /gcn/Cora GCN BBB.ipynb
+[W 01:48:22.193 NotebookApp] Notebook gcn/Cora GCN BBB.ipynb is not trusted
+[I 01:49:42.100 NotebookApp] Kernel interrupted: c2598ec7-d2f1-4b89-8fd0-2c4322721c03
+[I 01:50:22.200 NotebookApp] Saving file at /gcn/Cora GCN BBB.ipynb
+[W 01:50:22.200 NotebookApp] Notebook gcn/Cora GCN BBB.ipynb is not trusted
+[I 01:50:47.732 NotebookApp] Saving file at /gcn/Standard GCN Analysis.ipynb
+[I 01:52:21.640 NotebookApp] Saving file at /gcn/Cora GCN BBB.ipynb
+[W 01:52:21.640 NotebookApp] Notebook gcn/Cora GCN BBB.ipynb is not trusted
+[I 01:52:48.536 NotebookApp] Saving file at /gcn/Standard GCN Analysis.ipynb
+[I 01:54:21.646 NotebookApp] Saving file at /gcn/Cora GCN BBB.ipynb
+[W 01:54:21.646 NotebookApp] Notebook gcn/Cora GCN BBB.ipynb is not trusted
+[I 01:54:47.763 NotebookApp] Saving file at /gcn/Standard GCN Analysis.ipynb
+[I 01:54:55.687 NotebookApp] Kernel interrupted: 25e50e5b-1043-40a0-aaf9-a30cd4ad4768
+[I 01:55:08.223 NotebookApp] Kernel interrupted: 25e50e5b-1043-40a0-aaf9-a30cd4ad4768
+[I 01:56:22.205 NotebookApp] Saving file at /gcn/Cora GCN BBB.ipynb
+[W 01:56:22.205 NotebookApp] Notebook gcn/Cora GCN BBB.ipynb is not trusted
+[I 01:56:49.060 NotebookApp] Saving file at /gcn/Standard GCN Analysis.ipynb
+[I 02:00:22.197 NotebookApp] Saving file at /gcn/Cora GCN BBB.ipynb
+[W 02:00:22.197 NotebookApp] Notebook gcn/Cora GCN BBB.ipynb is not trusted
+[I 02:49:01.074 NotebookApp] 302 GET /notebooks/ (65.112.8.5) 0.84ms
+[I 02:52:55.444 NotebookApp] Kernel started: 349bbd01-49a4-4292-908a-ba52d4d4a63e
+[I 02:52:56.173 NotebookApp] Adapting to protocol v5.1 for kernel 349bbd01-49a4-4292-908a-ba52d4d4a63e
+[I 02:53:35.452 NotebookApp] Starting buffering for 349bbd01-49a4-4292-908a-ba52d4d4a63e:935a7a25efb24c4995d0fe74e0977e38
+[I 02:55:05.900 NotebookApp] Starting buffering for 25e50e5b-1043-40a0-aaf9-a30cd4ad4768:d2f236a9d80c42a8837391b9ca9f8365
+[I 02:56:23.533 NotebookApp] Adapting to protocol v5.1 for kernel 25e50e5b-1043-40a0-aaf9-a30cd4ad4768
+[I 03:10:59.339 NotebookApp] Starting buffering for 25e50e5b-1043-40a0-aaf9-a30cd4ad4768:6d39dff7f72746d387bf183455284094
+[W 04:03:47.326 NotebookApp] Notebook gcn/Cora GCN BBB.ipynb is not trusted
+[I 04:03:48.674 NotebookApp] Adapting to protocol v5.1 for kernel c2598ec7-d2f1-4b89-8fd0-2c4322721c03
+[I 04:04:54.176 NotebookApp] 302 GET /notebooks/gcn (65.112.8.5) 0.89ms
+[I 04:05:48.172 NotebookApp] Saving file at /gcn/Cora GCN BBB.ipynb
+[W 04:05:48.172 NotebookApp] Notebook gcn/Cora GCN BBB.ipynb is not trusted
+[I 04:06:37.720 NotebookApp] Saving file at /gcn/dataloader.py
+[I 04:06:56.690 NotebookApp] Saving file at /gcn/dataloader.py
+[I 04:07:10.814 NotebookApp] Kernel restarted: c2598ec7-d2f1-4b89-8fd0-2c4322721c03
+[I 04:07:11.819 NotebookApp] Adapting to protocol v5.1 for kernel c2598ec7-d2f1-4b89-8fd0-2c4322721c03
+[I 04:07:48.909 NotebookApp] Saving file at /gcn/Cora GCN BBB.ipynb
+[W 04:07:48.910 NotebookApp] Notebook gcn/Cora GCN BBB.ipynb is not trusted
+[I 04:08:15.248 NotebookApp] Kernel interrupted: c2598ec7-d2f1-4b89-8fd0-2c4322721c03
+[I 04:09:48.118 NotebookApp] Saving file at /gcn/Cora GCN BBB.ipynb
+[W 04:09:48.119 NotebookApp] Notebook gcn/Cora GCN BBB.ipynb is not trusted
+[I 04:23:18.949 NotebookApp] 302 GET /notebooks/variational%20hypergat/ (65.112.8.5) 0.43ms
+[I 04:23:19.031 NotebookApp] 302 GET /notebooks/variational%20hypergat (65.112.8.5) 0.91ms
+[I 04:24:41.084 NotebookApp] Adapting to protocol v5.1 for kernel 25e50e5b-1043-40a0-aaf9-a30cd4ad4768
+[I 04:26:40.326 NotebookApp] Saving file at /gcn/Standard GCN Analysis.ipynb
+[I 04:28:41.301 NotebookApp] Saving file at /gcn/Standard GCN Analysis.ipynb
+[I 04:30:41.222 NotebookApp] Saving file at /gcn/Standard GCN Analysis.ipynb
+[I 04:31:48.781 NotebookApp] Saving file at /variational hypergat/ECE.ipynb
+[I 04:32:40.255 NotebookApp] Saving file at /gcn/Standard GCN Analysis.ipynb
+[I 04:46:50.437 NotebookApp] 302 GET /notebooks/gcn (65.112.8.5) 0.87ms
+[I 04:47:46.434 NotebookApp] Saving file at /gcn/Standard GCN Analysis.ipynb
+[I 04:52:37.949 NotebookApp] 302 GET /notebooks/gcn (65.112.8.5) 0.87ms
+[I 04:53:22.384 NotebookApp] Starting buffering for 25e50e5b-1043-40a0-aaf9-a30cd4ad4768:af9cb4570d1a422e82dcd7ebdec639fc
+[I 04:53:22.792 NotebookApp] Kernel restarted: 25e50e5b-1043-40a0-aaf9-a30cd4ad4768
+[I 04:53:23.871 NotebookApp] Adapting to protocol v5.1 for kernel 25e50e5b-1043-40a0-aaf9-a30cd4ad4768
+[I 04:53:23.871 NotebookApp] Restoring connection for 25e50e5b-1043-40a0-aaf9-a30cd4ad4768:af9cb4570d1a422e82dcd7ebdec639fc
+[I 04:53:23.871 NotebookApp] Replaying 6 buffered messages
+[I 04:54:41.671 NotebookApp] Saving file at /gcn/Standard GCN Analysis.ipynb
+[I 04:56:42.232 NotebookApp] Saving file at /gcn/Standard GCN Analysis.ipynb
+[I 04:58:31.223 NotebookApp] 302 GET /notebooks/variational%20hypergat/ (65.112.8.5) 0.42ms
+[I 04:58:31.308 NotebookApp] 302 GET /notebooks/variational%20hypergat (65.112.8.5) 0.84ms
+[I 04:58:36.982 NotebookApp] Creating new file in /variational hypergat
+[I 04:59:22.241 NotebookApp] Saving file at /variational hypergat/ECE.txt
+[I 04:59:44.141 NotebookApp] Saving file at /variational hypergat/ECE.txt
+[I 04:59:44.769 NotebookApp] Saving file at /variational hypergat/ECE.txt
+[I 05:00:20.411 NotebookApp] Saving file at /variational hypergat/ECE.txt
+[I 05:00:37.506 NotebookApp] Saving file at /gcn/Standard GCN Analysis.ipynb
+[I 05:05:43.832 NotebookApp] 302 GET /notebooks/variational%20hypergat (65.112.8.5) 0.89ms
+[I 05:05:44.104 NotebookApp] Starting buffering for 25e50e5b-1043-40a0-aaf9-a30cd4ad4768:af9cb4570d1a422e82dcd7ebdec639fc
+[I 05:06:34.202 NotebookApp] Saving file at /variational hypergat/utils.py
+[I 05:06:34.380 NotebookApp] Saving file at /variational hypergat/utils.py
+[I 05:06:38.619 NotebookApp] 302 GET / (65.112.8.3) 0.43ms
+[I 05:07:12.894 NotebookApp] 302 GET /edit/variational%20hypergat/ (65.112.8.5) 0.49ms
+[W 05:07:12.975 NotebookApp] 404 GET /edit/variational%20hypergat (65.112.8.5): File does not exist: variational hypergat
+[W 05:07:12.976 NotebookApp] 404 GET /edit/variational%20hypergat (65.112.8.5) 1.30ms referer=None
+[W 05:07:18.883 NotebookApp] 404 GET /variational%20hypergat (65.112.8.5) 1.29ms referer=None
+[I 05:07:23.204 NotebookApp] Creating new file in /variational hypergat
+[I 05:07:33.640 NotebookApp] Creating new file in /variational hypergat
+[I 05:07:37.564 NotebookApp] Saving file at /variational hypergat/untitled.txt
+[I 05:07:53.931 NotebookApp] Saving file at /variational hypergat/adv_train.py
+[I 05:08:27.682 NotebookApp] Saving file at /variational hypergat/adv_train.py
+[I 05:08:30.655 NotebookApp] Saving file at /variational hypergat/adv_train.py
+[I 05:08:42.398 NotebookApp] Saving file at /variational hypergat/adv_train.py
+[I 05:10:00.674 NotebookApp] Saving file at /variational hypergat/adv_train.py
+[I 05:10:48.378 NotebookApp] Saving file at /variational hypergat/adv_train.py
+[I 05:11:07.471 NotebookApp] Creating new directory in /variational hypergat
+[I 05:11:18.922 NotebookApp] Saving file at /variational hypergat/adv_train.py
+[W 05:11:41.312 NotebookApp] 404 POST /api/contents/variational%2520hypergat (65.112.8.3): No such directory: /variational%20hypergat
+[W 05:11:41.312 NotebookApp] No such directory: /variational%%20hypergat
+[W 05:11:41.312 NotebookApp] 404 POST /api/contents/variational%2520hypergat (65.112.8.3) 1.26ms referer=https://52.183.33.13:8888/tree/variational%20hypergat
+[I 05:11:53.091 NotebookApp] Kernel started: 6d39a182-e3d6-4af9-a42c-1c04e7475707
+[I 05:11:53.682 NotebookApp] Adapting to protocol v5.1 for kernel 6d39a182-e3d6-4af9-a42c-1c04e7475707
+[I 05:12:14.209 NotebookApp] Saving file at /variational hypergat/adv_train.py
+[I 05:13:27.137 NotebookApp] Saving file at /variational hypergat/adv_train.py
+[I 05:13:32.444 NotebookApp] Saving file at /variational hypergat/adv_train.py
+[I 05:13:53.895 NotebookApp] Saving file at /variational hypergat/New Old Notebook.ipynb
+[I 05:14:34.756 NotebookApp] Saving file at /variational hypergat/adv_train.py
+[I 05:14:34.772 NotebookApp] Saving file at /variational hypergat/adv_train.py
+[I 05:14:41.813 NotebookApp] Saving file at /variational hypergat/adv_train.py
+[I 05:14:42.106 NotebookApp] Saving file at /variational hypergat/adv_train.py
+[I 05:19:10.223 NotebookApp] 302 GET /edit/variational%20hypergat/ (65.112.8.5) 0.43ms
+[W 05:19:10.307 NotebookApp] 404 GET /edit/variational%20hypergat (65.112.8.5): File does not exist: variational hypergat
+[W 05:19:10.308 NotebookApp] 404 GET /edit/variational%20hypergat (65.112.8.5) 1.46ms referer=None
+[I 05:19:17.198 NotebookApp] 302 GET /notebooks/variational%20hypergat (65.112.8.5) 0.89ms
+[W 05:23:23.685 NotebookApp] WebSocket ping timeout after 119878 ms.
+[I 05:23:28.687 NotebookApp] Starting buffering for 6d39a182-e3d6-4af9-a42c-1c04e7475707:d671d2da7af942918616d5f93d163248
+[I 05:25:11.278 NotebookApp] Adapting to protocol v5.1 for kernel 6d39a182-e3d6-4af9-a42c-1c04e7475707
+[I 05:25:11.279 NotebookApp] Restoring connection for 6d39a182-e3d6-4af9-a42c-1c04e7475707:d671d2da7af942918616d5f93d163248
+[I 06:17:53.937 NotebookApp] Starting buffering for c2598ec7-d2f1-4b89-8fd0-2c4322721c03:a41c38cb10424aa58878e206a3cfda51
+[I 06:17:55.004 NotebookApp] Starting buffering for 80c07b68-dd72-403b-b757-bd4b1e9508a1:4fa7c6e6e5db4e328d4eba165dc0df9f
+[I 06:33:34.471 NotebookApp] 302 GET /edit/variational%20hypergat/ (65.112.8.5) 0.44ms
+[W 06:33:34.564 NotebookApp] 404 GET /edit/variational%20hypergat (65.112.8.5): File does not exist: variational hypergat
+[W 06:33:34.564 NotebookApp] 404 GET /edit/variational%20hypergat (65.112.8.5) 1.29ms referer=None
+[I 06:33:39.906 NotebookApp] 302 GET /notebooks/variational%20hypergat (65.112.8.5) 0.88ms
+[W 07:29:11.280 NotebookApp] WebSocket ping timeout after 119911 ms.
+[I 07:29:16.283 NotebookApp] Starting buffering for 6d39a182-e3d6-4af9-a42c-1c04e7475707:d671d2da7af942918616d5f93d163248
+[I 07:30:33.646 NotebookApp] Adapting to protocol v5.1 for kernel 6d39a182-e3d6-4af9-a42c-1c04e7475707
+[I 07:30:33.646 NotebookApp] Restoring connection for 6d39a182-e3d6-4af9-a42c-1c04e7475707:d671d2da7af942918616d5f93d163248
+[I 08:42:21.551 NotebookApp] Starting buffering for 6d39a182-e3d6-4af9-a42c-1c04e7475707:d671d2da7af942918616d5f93d163248
+[I 10:01:20.855 NotebookApp] Adapting to protocol v5.1 for kernel 25e50e5b-1043-40a0-aaf9-a30cd4ad4768
+[I 10:03:20.449 NotebookApp] Saving file at /gcn/Standard GCN Analysis.ipynb
+[I 10:05:20.210 NotebookApp] Saving file at /gcn/Standard GCN Analysis.ipynb
+[I 10:07:20.071 NotebookApp] Saving file at /gcn/Standard GCN Analysis.ipynb
+[I 10:07:47.215 NotebookApp] Starting buffering for 25e50e5b-1043-40a0-aaf9-a30cd4ad4768:81f2bc1443bb486b834f59d06fc8711e
+[I 10:10:03.947 NotebookApp] Kernel started: f96a9597-04b0-4195-b860-36651f2a3b85
+[I 10:10:04.677 NotebookApp] Adapting to protocol v5.1 for kernel f96a9597-04b0-4195-b860-36651f2a3b85
+[I 10:11:48.723 NotebookApp] Starting buffering for f96a9597-04b0-4195-b860-36651f2a3b85:837ef9a8dd4645d98579b38faa27cf1d
+[I 10:33:02.426 NotebookApp] Adapting to protocol v5.1 for kernel f96a9597-04b0-4195-b860-36651f2a3b85
+[W 10:33:22.586 NotebookApp] Notebook gcn/Cora GCN BBB.ipynb is not trusted
+[I 10:33:24.089 NotebookApp] Adapting to protocol v5.1 for kernel c2598ec7-d2f1-4b89-8fd0-2c4322721c03
+[I 10:34:04.643 NotebookApp] 302 GET /notebooks/gcn (65.112.8.5) 0.89ms
+[I 10:34:05.131 NotebookApp] 302 GET /notebooks/gcn (65.112.8.5) 0.92ms
+[I 10:34:16.363 NotebookApp] Creating new file in /gcn
+[I 10:34:30.910 NotebookApp] Saving file at /gcn/utils2.py
+[I 10:35:02.264 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 10:35:40.535 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 10:37:01.822 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 10:37:44.922 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 10:39:02.314 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 10:41:02.349 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 10:41:31.723 NotebookApp] Kernel interrupted: f96a9597-04b0-4195-b860-36651f2a3b85
+[I 10:42:07.570 NotebookApp] Kernel interrupted: f96a9597-04b0-4195-b860-36651f2a3b85
+[I 10:42:52.577 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 10:43:00.308 NotebookApp] Kernel interrupted: f96a9597-04b0-4195-b860-36651f2a3b85
+[I 10:43:01.814 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 10:45:02.275 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 10:47:02.266 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 10:49:02.268 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 10:51:02.261 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 10:53:02.265 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 10:55:02.289 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 10:57:02.294 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 10:59:02.272 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 11:01:02.299 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 11:03:02.273 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 11:05:02.268 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 11:07:02.313 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 11:09:02.266 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 11:11:02.278 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 11:13:02.262 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 11:15:02.271 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 11:17:02.265 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[I 11:19:02.271 NotebookApp] Saving file at /gcn/Cora GCN BBB (Adversarial).ipynb
+[W 11:29:32.427 NotebookApp] WebSocket ping timeout after 119922 ms.
+[I 11:29:37.429 NotebookApp] Starting buffering for f96a9597-04b0-4195-b860-36651f2a3b85:397c8bc6bc3845a89ffbd6f7d97f411e
+[W 11:29:54.091 NotebookApp] WebSocket ping timeout after 119919 ms.
+[I 11:29:59.092 NotebookApp] Starting buffering for c2598ec7-d2f1-4b89-8fd0-2c4322721c03:6545009674d64e63b3b572e628c6041c
+[W 11:30:14.196 NotebookApp] Notebook gcn/Cora GCN BBB.ipynb is not trusted
+[I 11:30:16.399 NotebookApp] Adapting to protocol v5.1 for kernel c2598ec7-d2f1-4b89-8fd0-2c4322721c03
+[I 11:30:18.231 NotebookApp] Starting buffering for c2598ec7-d2f1-4b89-8fd0-2c4322721c03:dd9f455f027c4846b5e2c77672f64c2a
+[W 13:35:41.733 NotebookApp] SSL Error on 24 ('5.199.143.126', 64454): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 13:35:42.206 NotebookApp] SSL Error on 24 ('5.199.143.126', 50764): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 13:35:42.607 NotebookApp] SSL Error on 24 ('5.199.143.126', 50764): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:22.450 NotebookApp] SSL Error on 24 ('13.77.174.203', 22593): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:22.452 NotebookApp] SSL Error on 24 ('13.77.174.203', 22594): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:22.466 NotebookApp] SSL Error on 24 ('13.77.174.203', 22595): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:22.468 NotebookApp] SSL Error on 24 ('13.77.174.203', 22596): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:22.482 NotebookApp] SSL Error on 24 ('13.77.174.203', 22597): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:27.499 NotebookApp] SSL Error on 24 ('13.77.174.203', 22599): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:27.501 NotebookApp] SSL Error on 24 ('13.77.174.203', 22600): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:27.505 NotebookApp] SSL Error on 24 ('13.77.174.203', 22601): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:27.515 NotebookApp] SSL Error on 24 ('13.77.174.203', 22602): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:27.531 NotebookApp] SSL Error on 24 ('13.77.174.203', 22603): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:27.546 NotebookApp] SSL Error on 24 ('13.77.174.203', 22604): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:27.548 NotebookApp] SSL Error on 24 ('13.77.174.203', 22605): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[I 20:21:33.560 NotebookApp] Malformed HTTP message from 13.77.174.203: Malformed HTTP request line
+[I 20:21:33.579 NotebookApp] 302 GET / (13.77.174.203) 0.46ms
+[W 20:21:38.654 NotebookApp] SSL Error on 41 ('13.77.174.203', 22596): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.655 NotebookApp] SSL Error on 85 ('13.77.174.203', 22611): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.655 NotebookApp] SSL Error on 89 ('13.77.174.203', 22615): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.655 NotebookApp] SSL Error on 24 ('13.77.174.203', 22595): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.655 NotebookApp] SSL Error on 86 ('13.77.174.203', 22612): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.655 NotebookApp] SSL Error on 92 ('13.77.174.203', 22618): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.655 NotebookApp] SSL Error on 91 ('13.77.174.203', 22617): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.656 NotebookApp] SSL Error on 42 ('13.77.174.203', 22608): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.656 NotebookApp] SSL Error on 75 ('13.77.174.203', 22597): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.656 NotebookApp] SSL Error on 44 ('13.77.174.203', 22609): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.656 NotebookApp] SSL Error on 35 ('13.77.174.203', 22593): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.656 NotebookApp] SSL Error on 88 ('13.77.174.203', 22614): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.656 NotebookApp] SSL Error on 26 ('13.77.174.203', 22594): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.656 NotebookApp] SSL Error on 90 ('13.77.174.203', 22616): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.656 NotebookApp] SSL Error on 93 ('13.77.174.203', 22619): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.657 NotebookApp] SSL Error on 78 ('13.77.174.203', 22610): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[I 20:21:38.716 NotebookApp] 302 GET / (13.77.174.203) 0.44ms
+[W 20:21:38.718 NotebookApp] 405 PROPFIND / (13.77.174.203) 0.40ms referer=None
+[W 20:21:38.719 NotebookApp] 404 GET /dfshealth.jsp (13.77.174.203) 1.27ms referer=None
+[W 20:21:38.720 NotebookApp] 404 GET /nmaplowercheck1544559698 (13.77.174.203) 0.95ms referer=None
+[W 20:21:38.722 NotebookApp] 404 GET /rs-status (13.77.174.203) 0.90ms referer=None
+[W 20:21:38.722 NotebookApp] 405 OPTIONS / (13.77.174.203) 0.39ms referer=None
+[I 20:21:38.723 NotebookApp] 302 GET / (13.77.174.203) 0.36ms
+[W 20:21:38.724 NotebookApp] 404 GET /master.jsp (13.77.174.203) 0.90ms referer=None
+[W 20:21:38.725 NotebookApp] 404 GET /flumemaster.jsp (13.77.174.203) 0.91ms referer=None
+[W 20:21:38.725 NotebookApp] 403 POST /sdk (13.77.174.203): '_xsrf' argument missing from POST
+[W 20:21:38.726 NotebookApp] 403 POST /sdk (13.77.174.203) 1.25ms referer=None
+[W 20:21:38.728 NotebookApp] 404 GET /browseDirectory.jsp (13.77.174.203) 0.90ms referer=None
+[W 20:21:38.728 NotebookApp] 403 POST / (13.77.174.203): '_xsrf' argument missing from POST
+[W 20:21:38.728 NotebookApp] 403 POST / (13.77.174.203) 0.51ms referer=None
+[W 20:21:38.729 NotebookApp] 404 GET /.git/HEAD (13.77.174.203) 0.94ms referer=None
+[W 20:21:38.731 NotebookApp] 404 GET /tasktracker.jsp (13.77.174.203) 0.93ms referer=None
+[W 20:21:38.744 NotebookApp] SSL Error on 26 ('13.77.174.203', 22638): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.744 NotebookApp] SSL Error on 42 ('13.77.174.203', 22641): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.744 NotebookApp] SSL Error on 41 ('13.77.174.203', 22640): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.813 NotebookApp] SSL Error on 75 ('13.77.174.203', 22645): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.814 NotebookApp] SSL Error on 35 ('13.77.174.203', 22639): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.814 NotebookApp] SSL Error on 78 ('13.77.174.203', 22647): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.814 NotebookApp] SSL Error on 85 ('13.77.174.203', 22401): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.814 NotebookApp] SSL Error on 86 ('13.77.174.203', 22402): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.814 NotebookApp] SSL Error on 87 ('13.77.174.203', 22404): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.815 NotebookApp] SSL Error on 89 ('13.77.174.203', 22403): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.815 NotebookApp] SSL Error on 90 ('13.77.174.203', 22405): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.816 NotebookApp] 404 GET /evox/about (13.77.174.203) 0.96ms referer=None
+[I 20:21:38.817 NotebookApp] 302 GET / (13.77.174.203) 0.27ms
+[W 20:21:38.817 NotebookApp] 405 PROPFIND / (13.77.174.203) 0.38ms referer=None
+[W 20:21:38.872 NotebookApp] SSL Error on 91 ('13.77.174.203', 22406): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.873 NotebookApp] SSL Error on 44 ('13.77.174.203', 22646): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[I 20:21:38.873 NotebookApp] Malformed HTTP message from 13.77.174.203: Content-Length too long
+[W 20:21:38.874 NotebookApp] 405 OPTIONS / (13.77.174.203) 0.38ms referer=None
+[W 20:21:38.875 NotebookApp] 404 GET /status.jsp (13.77.174.203) 0.94ms referer=None
+[W 20:21:38.876 NotebookApp] 404 GET /jobtracker.jsp (13.77.174.203) 0.91ms referer=None
+[W 20:21:38.878 NotebookApp] 404 GET /HNAP1 (13.77.174.203) 1.71ms referer=None
+[W 20:21:38.879 NotebookApp] 405 PROPFIND / (13.77.174.203) 0.36ms referer=None
+[W 20:21:38.879 NotebookApp] 405 OPTIONS / (13.77.174.203) 0.38ms referer=None
+[W 20:21:38.937 NotebookApp] SSL Error on 26 ('13.77.174.203', 22426): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.996 NotebookApp] SSL Error on 42 ('13.77.174.203', 22437): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.997 NotebookApp] SSL Error on 41 ('13.77.174.203', 22435): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:38.997 NotebookApp] SSL Error on 24 ('13.77.174.203', 22429): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[I 20:21:38.999 NotebookApp] 302 GET /tree? (13.77.174.203) 0.49ms
+[W 20:21:39.002 NotebookApp] 405 HEAD / (13.77.174.203) 0.40ms referer=None
+[W 20:21:39.058 NotebookApp] 405 PHNN / (13.77.174.203) 0.40ms referer=None
+[W 20:21:39.059 NotebookApp] 405 OPTIONS / (13.77.174.203) 0.36ms referer=None
+[W 20:21:39.096 NotebookApp] SSL Error on 26 ('13.77.174.203', 22626): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:39.097 NotebookApp] SSL Error on 24 ('13.77.174.203', 22407): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:39.097 NotebookApp] SSL Error on 26 ('13.77.174.203', 22408): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[I 20:21:39.152 NotebookApp] 302 GET / (13.77.174.203) 0.40ms
+[W 20:21:39.153 NotebookApp] 405 OPTIONS / (13.77.174.203) 0.37ms referer=None
+[W 20:21:39.277 NotebookApp] SSL Error on 26 ('13.77.174.203', 22416): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:39.278 NotebookApp] SSL Error on 35 ('13.77.174.203', 22417): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:39.340 NotebookApp] 405 OPTIONS / (13.77.174.203) 0.43ms referer=None
+[W 20:21:39.340 NotebookApp] 405 HEAD / (13.77.174.203) 0.35ms referer=None
+[W 20:21:39.418 NotebookApp] SSL Error on 24 ('13.77.174.203', 22423): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:39.465 NotebookApp] SSL Error on 26 ('13.77.174.203', 22427): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:39.465 NotebookApp] 405 OPTIONS / (13.77.174.203) 0.44ms referer=None
+[W 20:21:39.474 NotebookApp] 403 POST / (13.77.174.203): '_xsrf' argument missing from POST
+[W 20:21:39.474 NotebookApp] 403 POST / (13.77.174.203) 0.50ms referer=None
+[W 20:21:39.527 NotebookApp] SSL Error on 24 ('13.77.174.203', 22430): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:39.589 NotebookApp] 405 OPTIONS / (13.77.174.203) 0.42ms referer=None
+[W 20:21:39.603 NotebookApp] SSL Error on 24 ('13.77.174.203', 22434): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:39.651 NotebookApp] SSL Error on 26 ('13.77.174.203', 22438): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:39.652 NotebookApp] 405 OPTIONS / (13.77.174.203) 0.40ms referer=None
+[W 20:21:39.715 NotebookApp] SSL Error on 24 ('13.77.174.203', 22443): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:39.727 NotebookApp] SSL Error on 26 ('13.77.174.203', 22442): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:39.761 NotebookApp] 405 OPTIONS / (13.77.174.203) 0.40ms referer=None
+[W 20:21:39.763 NotebookApp] 404 GET /wp%-login (13.77.174.203) 1.59ms referer=None
+[W 20:21:39.768 NotebookApp] SSL Error on 24 ('13.77.174.203', 22446): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:39.769 NotebookApp] SSL Error on 26 ('13.77.174.203', 22447): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:39.783 NotebookApp] 404 GET /rails/info/properties (13.77.174.203) 1.31ms referer=None
+[W 20:21:39.784 NotebookApp] 405 OPTIONS / (13.77.174.203) 0.37ms referer=None
+[W 20:21:39.788 NotebookApp] SSL Error on 24 ('13.77.174.203', 22450): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:39.788 NotebookApp] SSL Error on 26 ('13.77.174.203', 22451): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:39.812 NotebookApp] 405 OPTIONS / (13.77.174.203) 0.37ms referer=None
+[I 20:21:39.813 NotebookApp] 302 GET /random404page/ (13.77.174.203) 0.33ms
+[W 20:21:39.817 NotebookApp] SSL Error on 24 ('13.77.174.203', 22454): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:39.826 NotebookApp] 404 GET /random404page (13.77.174.203) 0.91ms referer=None
+[W 20:21:39.829 NotebookApp] SSL Error on 24 ('13.77.174.203', 22456): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:39.838 NotebookApp] 404 GET /administrator (13.77.174.203) 1.01ms referer=None
+[W 20:21:39.857 NotebookApp] SSL Error on 24 ('13.77.174.203', 22458): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[I 20:21:39.875 NotebookApp] 302 GET /admin/ (13.77.174.203) 0.35ms
+[W 20:21:39.884 NotebookApp] SSL Error on 24 ('13.77.174.203', 22460): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:21:39.892 NotebookApp] 404 GET /admin (13.77.174.203) 0.95ms referer=None
+[W 20:21:39.906 NotebookApp] SSL Error on 24 ('13.77.174.203', 22462): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 05:44:42.037 NotebookApp] SSL Error on 24 ('92.53.76.210', 60000): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 11:07:12.914 NotebookApp] SSL Error on 24 ('92.53.76.211', 60000): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 14:44:36.894 NotebookApp] SSL Error on 24 ('125.64.94.197', 54619): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 01:50:30.380 NotebookApp] SSL Error on 24 ('196.52.43.108', 58927): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[I 03:53:02.133 NotebookApp] 302 GET / (194.147.32.50) 0.43ms
+[I 03:53:03.098 NotebookApp] 302 GET /tree (194.147.32.50) 0.53ms
+[W 05:04:28.690 NotebookApp] 404 GET //a2billing/customer/templates/default/footer.tpl (194.147.32.50) 1.23ms referer=None
+[I 06:09:53.515 NotebookApp] 302 GET //recordings/ (194.147.32.50) 0.44ms
+[W 07:15:46.844 NotebookApp] 404 GET //about.php (194.147.32.50) 1.21ms referer=None
+[W 08:20:57.164 NotebookApp] 404 GET //vtigercrm/vtigerservice.php (194.147.32.50) 1.20ms referer=None
+[W 09:25:34.345 NotebookApp] SSL Error on 24 ('194.147.32.50', 36996): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[I 09:59:16.628 NotebookApp] 302 GET / (194.147.32.50) 0.42ms
+[I 09:59:17.483 NotebookApp] 302 GET /tree (194.147.32.50) 0.55ms
+[W 20:37:23.581 NotebookApp] SSL Error on 26 ('142.93.23.243', 36904): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:37:23.585 NotebookApp] SSL Error on 35 ('142.93.23.243', 36910): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:37:23.589 NotebookApp] SSL Error on 35 ('142.93.23.243', 36912): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 20:37:23.603 NotebookApp] SSL Error on 35 ('142.93.23.243', 36920): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[W 22:07:44.753 NotebookApp] SSL Error on 24 ('122.228.19.80', 57800): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:841)
+[C 02:01:11.402 NotebookApp] received signal 15, stopping
+[I 02:01:11.403 NotebookApp] Shutting down 6 kernels
+[I 02:01:12.405 NotebookApp] Kernel shutdown: 80c07b68-dd72-403b-b757-bd4b1e9508a1
+[I 02:01:12.406 NotebookApp] Kernel shutdown: 25e50e5b-1043-40a0-aaf9-a30cd4ad4768
+[I 02:01:12.406 NotebookApp] Kernel shutdown: c2598ec7-d2f1-4b89-8fd0-2c4322721c03
+[I 02:01:12.406 NotebookApp] Kernel shutdown: 349bbd01-49a4-4292-908a-ba52d4d4a63e
+[I 02:01:12.406 NotebookApp] Kernel shutdown: 6d39a182-e3d6-4af9-a42c-1c04e7475707
+[I 02:01:12.407 NotebookApp] Kernel shutdown: f96a9597-04b0-4195-b860-36651f2a3b85

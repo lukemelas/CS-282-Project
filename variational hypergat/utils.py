@@ -1,75 +1,58 @@
 import numpy as np
-import scipy.sparse as sp
 import torch
+import scipy.sparse as sp_sparse
 import pdb
 
+def scipy_to_torch_sparse(x):
+    '''Converts sparse scipy matrix to torch sparse tensor'''
+    x = x.tocoo().astype(np.float32) # convert to COO format
+    idx = np.vstack((x.row, x.col)).astype(np.int64)
+    idx = torch.from_numpy(idx) # matrix indices
+    val = torch.from_numpy(x.data) # matrix data
+    t = torch.sparse.FloatTensor(idx, val, torch.Size(x.shape))
+    return t
 
-def encode_onehot(labels):
-    # classes = set(labels) # :(
-    classes = ['Theory', 'Probabilistic_Methods', 'Genetic_Algorithms', 'Rule_Learning', 'Case_Based', 'Neural_Networks', 'Reinforcement_Learning']
-    classes_dict = {c: np.identity(len(classes))[i, :] for i, c in enumerate(classes)}
-    labels_onehot = np.array(list(map(classes_dict.get, labels)), dtype=np.int32)
-    return labels_onehot
+def normalize_sparse(x):
+    '''Fast sparse row-normalization'''
+    row_sum_inv = np.power(np.array(x.sum(1)), -1).flatten()
+    row_sum_inv[np.isinf(row_sum_inv)] = 0 # set 0s that went 1/0 back to 0
+    row_sum_inv_matrix = sp_sparse.diags(row_sum_inv)
+    x = row_sum_inv_matrix.dot(x)
+    return x
 
+def labels_to_onehot(labels):
+    '''Labels list --> one hot matrix'''
+    classes = set(labels)
+    classes = {c: np.identity(len(classes))[i,:] for i,c in enumerate(classes)}
+    onehots = np.array(list(map(classes.get, labels)), dtype=np.float32)
+    return onehots
 
-def load_data(path="./data/cora/", dataset="cora"):
-    """Load citation network dataset (cora only for now)"""
-    print('Loading {} dataset...'.format(dataset))
+def coo_to_symmetric(x):
+    '''Converts sparse (COO) matrix to symmetric adjacency matrix'''
+    return x + x.T.multiply(x.T > x) - x.multiply(x.T > x)
+       
+def check(val, msg):
+    '''Checks whether val is nan or inf and prints msg if True'''
+    if not val: print(msg); pdb.set_trace()
+        
+def to_numpy(t):
+    '''PyTorch tensor to numpy array'''
+    return t.detach().to('cpu').numpy()
 
-    idx_features_labels = np.genfromtxt("{}{}.content".format(path, dataset), dtype=np.dtype(str))
-    features = sp.csr_matrix(idx_features_labels[:, 1:-1], dtype=np.float32)
-    labels = encode_onehot(idx_features_labels[:, -1])
+class AverageMeter(object):
+    """Computes and stores the average, current value, 
+       and a rolling average with window size roll_len"""
+    def __init__(self, roll_len=100):
+        self.roll_len = roll_len
+        self.reset()
 
-    # build graph
-    idx = np.array(idx_features_labels[:, 0], dtype=np.int32)
-    idx_map = {j: i for i, j in enumerate(idx)}
-    edges_unordered = np.genfromtxt("{}{}.cites".format(path, dataset), dtype=np.int32)
-    edges = np.array(list(map(idx_map.get, edges_unordered.flatten())), dtype=np.int32).reshape(edges_unordered.shape)
-    adj = sp.coo_matrix((np.ones(edges.shape[0]), (edges[:, 0], edges[:, 1])), shape=(labels.shape[0], labels.shape[0]), dtype=np.float32)
+    def reset(self):
+        self.val = self.avg = self.sum = self.count = 0
+        self.roll = []; self.roll_avg = 0
 
-    # build symmetric adjacency matrix
-    adj = adj + adj.T.multiply(adj.T > adj) - adj.multiply(adj.T > adj)
-
-    features = normalize_features(features)
-    adj = normalize_adj(adj + sp.eye(adj.shape[0]))
-
-    idx_train = range(140)
-    idx_val = range(200, 500)
-    idx_test = range(500, 1500)
-
-    adj = torch.FloatTensor(np.array(adj.todense()))
-    features = torch.FloatTensor(np.array(features.todense()))
-    labels = torch.LongTensor(np.where(labels)[1])
-
-    idx_train = torch.LongTensor(idx_train)
-    idx_val = torch.LongTensor(idx_val)
-    idx_test = torch.LongTensor(idx_test)
-
-    return adj, features, labels, idx_train, idx_val, idx_test
-
-
-def normalize_adj(mx):
-    """Row-normalize sparse matrix"""
-    rowsum = np.array(mx.sum(1))
-    r_inv_sqrt = np.power(rowsum, -0.5).flatten()
-    r_inv_sqrt[np.isinf(r_inv_sqrt)] = 0.
-    r_mat_inv_sqrt = sp.diags(r_inv_sqrt)
-    return mx.dot(r_mat_inv_sqrt).transpose().dot(r_mat_inv_sqrt)
-
-
-def normalize_features(mx):
-    """Row-normalize sparse matrix"""
-    rowsum = np.array(mx.sum(1))
-    r_inv = np.power(rowsum, -1).flatten()
-    r_inv[np.isinf(r_inv)] = 0.
-    r_mat_inv = sp.diags(r_inv)
-    mx = r_mat_inv.dot(mx)
-    return mx
-
-
-def accuracy(output, labels):
-    preds = output.max(1)[1].type_as(labels)
-    correct = preds.eq(labels).double()
-    correct = correct.sum()
-    return correct / len(labels)
+    def update(self, val, n=1):
+        self.val = val; self.sum += val * n; self.count += n
+        self.avg = self.sum / self.count
+        self.roll = (self.roll + [val] * n)[-self.roll_len:]
+        self.roll_avg = sum(self.roll) / len(self.roll)
 

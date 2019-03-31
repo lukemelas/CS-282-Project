@@ -3,6 +3,8 @@ import numpy as np
 import torch
 import scipy.sparse as sp_sparse
 import pdb
+import scipy.sparse as sp
+
 
 from utils import scipy_to_torch_sparse, normalize_sparse, \
                   labels_to_onehot, coo_to_symmetric
@@ -45,11 +47,11 @@ def load_cora(path='../data/cora/'):
     labels = torch.LongTensor(np.where(labels)[1])
     adj = scipy_to_torch_sparse(adj)
 
-    # Save for GAE
-    torch.save({'adj_orig': adj_orig.todense(), 'adj_i': adj.indices, 'adj_v': adj.values,
-                'adj_s': adj.shape, 'feats': feats, 'labels': labels, 
-                'idx_train': idx_train, 'idx_val': idx_val, 'idx_test': idx_test}, 
-                '../data/cora/preprocessed_gcn_data_for_gae.pth')
+    ## Save for GAE
+    #torch.save({'adj_orig': adj_orig.todense(), 'adj_i': adj.indices, 'adj_v': adj.values,
+    #            'adj_s': adj.shape, 'feats': feats, 'labels': labels, 
+    #            'idx_train': idx_train, 'idx_val': idx_val, 'idx_test': idx_test}, 
+    #            '../data/cora/preprocessed_gcn_data_for_gae.pth')
 
     return adj, feats, labels, idx_train, idx_val, idx_test
 
@@ -59,7 +61,7 @@ def load_adv_data(node, path="../data/cora/", dataset="cora"):
 
     idx_features_labels = np.genfromtxt("{}{}.content".format(path, dataset),
                                         dtype=np.dtype(str))
-    features = sp.csr_matrix(idx_features_labels[:, 1:-1], dtype=np.float32)
+    features = sp_sparse.csr_matrix(idx_features_labels[:, 1:-1], dtype=np.float32)
     labels = encode_onehot(idx_features_labels[:, -1])
     
     # build graph
@@ -69,7 +71,7 @@ def load_adv_data(node, path="../data/cora/", dataset="cora"):
                                     dtype=np.int32)
     edges = np.array(list(map(idx_map.get, edges_unordered.flatten())),
                      dtype=np.int32).reshape(edges_unordered.shape)
-    adj = sp.coo_matrix((np.ones(edges.shape[0]), (edges[:, 0], edges[:, 1])),
+    adj = sp_sparse.coo_matrix((np.ones(edges.shape[0]), (edges[:, 0], edges[:, 1])),
                         shape=(labels.shape[0], labels.shape[0]),
                         dtype=np.float32)
 
@@ -106,9 +108,9 @@ def load_adv_data(node, path="../data/cora/", dataset="cora"):
         new_adj[node,idx] = 0
         new_adj[idx,node] = 0
     
-    adj = sp.csr_matrix(new_adj)
+    adj = sp_sparse.csr_matrix(new_adj)
     features = normalize(features)
-    adj = normalize(adj + sp.eye(adj.shape[0]))
+    adj = normalize(adj + sp_sparse.eye(adj.shape[0]))
 
     idx_train = range(140)
     idx_val = range(200, 500)
